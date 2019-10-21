@@ -69,13 +69,13 @@ namespace T1_water_delivery
         protected Dictionary<string, Product> allProducts = new Dictionary<string, Product>
         {
             { "water", new Product(numberOfProducts["water"], "water") },
-            { "bisque", new Product(numberOfProducts["bisque"], "bisque") },
+            { "biscuit", new Product(numberOfProducts["biscuit"], "biscuit") },
         };
 
         static protected Dictionary<string, int> numberOfProducts = new Dictionary<string, int>
         {
             { "water", 0 },
-            { "bisque", 0 },
+            { "biscuit", 0 },
         };
 
         public MainPage()

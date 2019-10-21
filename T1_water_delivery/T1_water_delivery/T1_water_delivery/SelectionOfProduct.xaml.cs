@@ -23,16 +23,15 @@ namespace T1_water_delivery
             numOf.Text = numberOfProduct.ToString();
             stefan.ValueChanged += (sender, e) =>
             {
-                numberOfProduct = stefan.Value;  //когда можно бует вводить кол-во самостоятельно, просто сделать стефана размером с введенное значение
+                numberOfProduct = stefan.Value;
                 numOf.Text = numberOfProduct.ToString();
             };
 
-            List<string> sone = new List<string> { "water", "bisque" };
+            List<string> sone = new List<string> { "water", "biscuit" };
             Picker pine = new Picker
             {
                 ItemsSource = sone,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
-                //VerticalOptions = LayoutOptions.CenterAndExpand
                 WidthRequest = 90
             };
             pine.SelectedIndex = 0;
@@ -42,8 +41,6 @@ namespace T1_water_delivery
                 if (pine.SelectedIndex != -1)
                 {
                     chosenProduct = sone[pine.SelectedIndex];
-                    numberOfProduct = 0;
-                    numOf.Text = numberOfProduct.ToString();
                 }
             };
             stive.Children.Add(pine);
@@ -75,7 +72,7 @@ namespace T1_water_delivery
 
         private void bisque_Clicked(object sender, EventArgs e)
         {
-            chosenProduct = "bisque";
+            chosenProduct = "biscuit";
             Navigation.PopAsync();
         }
 

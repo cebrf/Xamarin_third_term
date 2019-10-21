@@ -9,8 +9,11 @@
         <StackLayout x:Name="stive">
             <Stepper x:Name="stefan"
                      Increment="1"
+                     Maximum="100000"
                      HorizontalOptions="EndAndExpand"/>
-            <Entry x:Name="numOf"/>
+            <Entry x:Name="numOf"
+                   Keyboard="Numeric"
+                   MaxLength = "5"/>
             <Button x:Name="confirm"
                     Text="confirm"
                     VerticalOptions="EndAndExpand"
