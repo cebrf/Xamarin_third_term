@@ -47,6 +47,24 @@ namespace T1_water_delivery
                 }
             };
             stive.Children.Add(pine);
+
+
+            numOf.Placeholder = "number of product";
+            numOf.PlaceholderColor = Color.Olive; //Color.OldLace
+            numOf.TextChanged += (e, f) =>
+            {
+                if (numOf.Text == null || numOf.Text == "")
+                {
+                    stefan.Value = 0;
+                    numberOfProduct = stefan.Value;
+                    numOf.Text = "0";
+                }
+                else
+                {
+                    stefan.Value = Double.Parse(numOf.Text);
+                    numberOfProduct = stefan.Value;
+                }
+            };
         }
 
         private void water_Clicked(object sender, EventArgs e)
