@@ -93,16 +93,16 @@ namespace T1_water_delivery
             SelectionOfProduct newPage = new SelectionOfProduct();
             newPage.Disappearing += (a, b) =>
             {
-                if (newPage.chosenProduct != null)
+                if (newPage.chosenProduct != null && newPage.numberOfProduct != 0)
                 {
                     if (numberOfProducts[newPage.chosenProduct] != 0)
                     {
-                        numberOfProducts[newPage.chosenProduct]++;
+                        numberOfProducts[newPage.chosenProduct] += Convert.ToInt32(newPage.numberOfProduct);
                         allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
                     }
                     else
                     {
-                        numberOfProducts[newPage.chosenProduct]++;
+                        numberOfProducts[newPage.chosenProduct] += Convert.ToInt32(newPage.numberOfProduct);
                         allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
                         allProducts[newPage.chosenProduct].deleteProduct.Clicked += (c, d) =>
                         {

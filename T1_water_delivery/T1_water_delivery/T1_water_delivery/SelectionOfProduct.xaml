@@ -6,16 +6,15 @@
              mc:Ignorable="d"
              x:Class="T1_water_delivery.SelectionOfProduct">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="water"
-                    Text="water"
-                    Clicked="water_Clicked"/>
-            <Button x:Name="bisque"
-                    Text="bisque"
-                    Clicked="bisque_Clicked"/>
+        <StackLayout x:Name="stive">
+            <Stepper x:Name="stefan"
+                     Increment="1"
+                     HorizontalOptions="EndAndExpand"/>
+            <Entry x:Name="numOf"/>
+            <Button x:Name="confirm"
+                    Text="confirm"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="confirm_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

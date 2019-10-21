@@ -13,9 +13,40 @@ namespace T1_water_delivery
     public partial class SelectionOfProduct : ContentPage
     {
         public string chosenProduct = null;
+        public double numberOfProduct = 0;
         public SelectionOfProduct()
         {
             InitializeComponent();
+
+            
+            
+            numOf.Text = numberOfProduct.ToString();
+            stefan.ValueChanged += (sender, e) =>
+            {
+                numberOfProduct = stefan.Value;  //когда можно бует вводить кол-во самостоятельно, просто сделать стефана размером с введенное значение
+                numOf.Text = numberOfProduct.ToString();
+            };
+
+            List<string> sone = new List<string> { "water", "bisque" };
+            Picker pine = new Picker
+            {
+                ItemsSource = sone,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                //VerticalOptions = LayoutOptions.CenterAndExpand
+                WidthRequest = 90
+            };
+            pine.SelectedIndex = 0;
+            chosenProduct = sone[pine.SelectedIndex];
+            pine.SelectedIndexChanged += (e, f) =>
+            { 
+                if (pine.SelectedIndex != -1)
+                {
+                    chosenProduct = sone[pine.SelectedIndex];
+                    numberOfProduct = 0;
+                    numOf.Text = numberOfProduct.ToString();
+                }
+            };
+            stive.Children.Add(pine);
         }
 
         private void water_Clicked(object sender, EventArgs e)
@@ -28,6 +59,12 @@ namespace T1_water_delivery
         {
             chosenProduct = "bisque";
             Navigation.PopAsync();
+        }
+
+        private void confirm_Clicked(object sender, EventArgs e)
+        {
+            if (chosenProduct != null)
+                Navigation.PopAsync();
         }
     }
 }
