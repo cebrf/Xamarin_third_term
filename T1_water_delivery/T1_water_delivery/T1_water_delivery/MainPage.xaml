@@ -6,8 +6,7 @@
              mc:Ignorable="d"
              x:Class="T1_water_delivery.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
+    <!--<StackLayout>
         <Label x:Name="mainLabel"
            Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
@@ -16,6 +15,34 @@
                 Text="Go Next"
                 BackgroundColor="GreenYellow"
                 Clicked="goNext_Clicked"/>
-    </StackLayout>
+    </StackLayout>-->
+
+    <Grid>
+        <StackLayout x:Name="mainStack"
+                     BackgroundColor="Accent">
+        </StackLayout>
+        <Button x:Name="order"
+                BackgroundColor="Bisque"
+                TextColor="Black"
+                FontSize="16"
+                HeightRequest="40"
+                WidthRequest="120"
+                Text="Order"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand"
+                Margin="10"
+                Clicked="order_Clicked"
+                />
+        <Button x:Name="addNewProduct"
+                Text="+"
+                Margin="10"
+                BackgroundColor="Bisque"
+                CornerRadius="40"
+                HeightRequest="40"
+                WidthRequest="40"
+                HorizontalOptions="End" 
+                VerticalOptions="End"
+                Clicked="addNewProduct_Clicked"/>
+    </Grid>
 
 </ContentPage>

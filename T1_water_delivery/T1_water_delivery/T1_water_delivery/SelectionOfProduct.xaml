@@ -10,6 +10,12 @@
             <Label Text="Welcome"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="water"
+                    Text="water"
+                    Clicked="water_Clicked"/>
+            <Button x:Name="bisque"
+                    Text="bisque"
+                    Clicked="bisque_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

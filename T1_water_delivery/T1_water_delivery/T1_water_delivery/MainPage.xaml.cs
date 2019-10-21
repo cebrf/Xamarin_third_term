@@ -13,15 +13,106 @@ namespace T1_water_delivery
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public class Product
+        {
+            public Product(int numberOfProd_, string typeOfPr_) 
+            {
+                typeOfPr = typeOfPr_;
+                numberOfProd = numberOfProd_;
+            }
+
+            string typeOfPr = "123";
+            int numberOfProd = 1;
+            Label currentProduct = new Label
+            {
+                FontSize = 16,
+                HorizontalOptions = LayoutOptions.StartAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                Margin = new Thickness(20, 0, 0, 0)
+            };
+
+            public Label numberOfProduct = new Label
+            {
+                FontSize = 18,
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+
+            public Button deleteProduct = new Button
+            {
+                Text = "X",
+                Margin = new Thickness(10),
+                BackgroundColor = new Color(64, 74, 3),
+                HeightRequest = 40,
+                WidthRequest = 40,
+                CornerRadius = 40
+            };
+
+            public StackLayout st = new StackLayout
+            {
+                Orientation = StackOrientation.Horizontal,
+                Margin = new Thickness(10, 10, 10, 0),
+                BackgroundColor = new Color(255, 228, 196)
+            };
+
+            public void makeChange(int num)
+            {
+                numberOfProd = num;
+                currentProduct.Text = typeOfPr;
+                numberOfProduct.Text = numberOfProd.ToString();
+                st.Children.Add(currentProduct);
+                st.Children.Add(numberOfProduct);
+                st.Children.Add(deleteProduct);
+            }
+        };
+
+        protected Dictionary<string, Product> allProducts = new Dictionary<string, Product>
+        {
+            { "water", new Product(numberOfProducts["water"], "water") },
+            { "bisque", new Product(numberOfProducts["bisque"], "bisque") },
+        };
+
+        static protected Dictionary<string, int> numberOfProducts = new Dictionary<string, int>
+        {
+            { "water", 0 },
+            { "bisque", 0 },
+        };
+
         public MainPage()
         {
             InitializeComponent();
-            mainLabel.Text = "Astaroth";
         }
 
-        private void goNext_Clicked(object sender, EventArgs e)
+        private void order_Clicked(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void addNewProduct_Clicked(object sender, EventArgs e)
         {
             SelectionOfProduct newPage = new SelectionOfProduct();
+            newPage.Disappearing += (a, b) =>
+            {
+                if (newPage.chosenProduct != null)
+                {
+                    if (numberOfProducts[newPage.chosenProduct] != 0)
+                    {
+                        numberOfProducts[newPage.chosenProduct]++;
+                        allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
+                    }
+                    else
+                    {
+                        numberOfProducts[newPage.chosenProduct]++;
+                        allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
+                        allProducts[newPage.chosenProduct].deleteProduct.Clicked += (c, d) =>
+                        {
+                            numberOfProducts[newPage.chosenProduct] = 0;
+                            mainStack.Children.Remove(allProducts[newPage.chosenProduct].st);
+                        };
+                        mainStack.Children.Add(allProducts[newPage.chosenProduct].st);
+                    }
+                }
+            };
             Navigation.PushAsync(newPage);
         }
     }
