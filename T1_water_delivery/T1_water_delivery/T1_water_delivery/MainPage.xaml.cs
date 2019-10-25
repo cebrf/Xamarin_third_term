@@ -121,7 +121,7 @@ namespace T1_water_delivery
                 mainStack.Children.Clear();
                 numberOfProducts.Clear();
 
-                //string answer = DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+                ///bool answer = DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
             }
         }
     }

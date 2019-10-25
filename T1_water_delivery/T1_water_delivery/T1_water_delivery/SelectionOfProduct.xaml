@@ -6,9 +6,9 @@
              mc:Ignorable="d"
              x:Class="T1_water_delivery.SelectionOfProduct">
     <ContentPage.Content>
-        <StackLayout x:Name="stive"
+        <StackLayout x:Name="mainStack"
                      BackgroundColor="LightSteelBlue">
-            <Picker x:Name="pine"
+            <Picker x:Name="choosePr"
                     HorizontalOptions="StartAndExpand"
                     WidthRequest="200"
                     Margin="10, 10, 0, 0"/>
@@ -23,7 +23,7 @@
                        MaxLength = "5"
                        WidthRequest="200"
                        Margin="10, 0, 0, 0"/>
-                <Stepper x:Name="stefan"
+                <Stepper x:Name="numStep"
                          Increment="1"
                          Maximum="100000"
                          HorizontalOptions="EndAndExpand"
