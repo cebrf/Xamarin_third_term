@@ -109,7 +109,7 @@ namespace T1_water_delivery
             Navigation.PushAsync(newPage);
         }
 
-        private void order_Clicked(object sender, EventArgs e)
+        async private void order_Clicked(object sender, EventArgs e)
         {
             if (mainStack.Children.Count == 0)
             {
@@ -117,11 +117,13 @@ namespace T1_water_delivery
             }
             else
             {
-                DisplayAlert("Your order is accepted", "Your order is accepted.\nPlease expect.\n\nSoon you will be contacted to clarify your order", "OK");
-                mainStack.Children.Clear();
-                numberOfProducts.Clear();
-
-                ///bool answer = DisplayAlert("Question?", "Would you like to play a game", "Yes", "No");
+                bool answer = await DisplayAlert("accept?", "Do you want to accept your order?", "Yes", "No");
+                if (answer)
+                {
+                    await DisplayAlert("Your order is accepted", "Your order is accepted.\nPlease expect.\n\nSoon you will be contacted to clarify your order", "OK");
+                    mainStack.Children.Clear();
+                    numberOfProducts.Clear();
+                }
             }
         }
     }
