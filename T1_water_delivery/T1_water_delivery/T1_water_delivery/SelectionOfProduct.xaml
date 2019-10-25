@@ -6,18 +6,34 @@
              mc:Ignorable="d"
              x:Class="T1_water_delivery.SelectionOfProduct">
     <ContentPage.Content>
-        <StackLayout x:Name="stive">
-            <Stepper x:Name="stefan"
-                     Increment="1"
-                     Maximum="100000"
-                     HorizontalOptions="EndAndExpand"/>
-            <Entry x:Name="numOf"
-                   Keyboard="Numeric"
-                   MaxLength = "5"/>
-            <Button x:Name="confirm"
-                    Text="confirm"
-                    VerticalOptions="EndAndExpand"
-                    Clicked="confirm_Clicked"/>
+        <StackLayout x:Name="stive"
+                     BackgroundColor="LightSteelBlue">
+            <Picker x:Name="pine"
+                    HorizontalOptions="StartAndExpand"
+                    WidthRequest="200"
+                    Margin="10, 10, 0, 0"/>
+            <Image x:Name="ima"
+                   VerticalOptions="CenterAndExpand"
+                   WidthRequest="350"/>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout Orientation="Horizontal">
+                <Entry x:Name="numOf"
+                       Keyboard="Numeric"
+                       HorizontalOptions="StartAndExpand"
+                       MaxLength = "5"
+                       WidthRequest="200"
+                       Margin="10, 0, 0, 0"/>
+                <Stepper x:Name="stefan"
+                         Increment="1"
+                         Maximum="100000"
+                         HorizontalOptions="EndAndExpand"
+                         Margin="0, 0, 10, 0 "/>
+            </StackLayout>
+                <Button x:Name="confirm"
+                        Text="confirm"
+                        VerticalOptions="EndAndExpand"
+                        Clicked="confirm_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

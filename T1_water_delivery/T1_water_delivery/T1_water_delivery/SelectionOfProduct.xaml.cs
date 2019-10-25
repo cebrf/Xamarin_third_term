@@ -18,8 +18,6 @@ namespace T1_water_delivery
         {
             InitializeComponent();
 
-            
-            
             numOf.Text = numberOfProduct.ToString();
             stefan.ValueChanged += (sender, e) =>
             {
@@ -27,13 +25,9 @@ namespace T1_water_delivery
                 numOf.Text = numberOfProduct.ToString();
             };
 
-            List<string> sone = new List<string> { "water", "biscuit" };
-            Picker pine = new Picker
-            {
-                ItemsSource = sone,
-                HorizontalOptions = LayoutOptions.CenterAndExpand,
-                WidthRequest = 90
-            };
+            List<string> sone = new List<string> { "water", "biscuit", "juice", "nukacola" };
+            List<string> pict = new List<string> { "water.jpg", "biscuit.jpg", "juice.jpg", "nukacola.png" };
+            pine.ItemsSource = sone;
             pine.SelectedIndex = 0;
             chosenProduct = sone[pine.SelectedIndex];
             pine.SelectedIndexChanged += (e, f) =>
@@ -41,13 +35,11 @@ namespace T1_water_delivery
                 if (pine.SelectedIndex != -1)
                 {
                     chosenProduct = sone[pine.SelectedIndex];
+                    ima.Source = ImageSource.FromFile(pict[pine.SelectedIndex]);
                 }
             };
             stive.Children.Add(pine);
 
-
-            numOf.Placeholder = "number of product";
-            numOf.PlaceholderColor = Color.Olive; //Color.OldLace
             numOf.TextChanged += (e, f) =>
             {
                 if (numOf.Text == null || numOf.Text == "")
@@ -62,18 +54,9 @@ namespace T1_water_delivery
                     numberOfProduct = stefan.Value;
                 }
             };
-        }
 
-        private void water_Clicked(object sender, EventArgs e)
-        {
-            chosenProduct = "water";
-            Navigation.PopAsync();
-        }
 
-        private void bisque_Clicked(object sender, EventArgs e)
-        {
-            chosenProduct = "biscuit";
-            Navigation.PopAsync();
+            ima.Source = ImageSource.FromFile("water.jpg");
         }
 
         private void confirm_Clicked(object sender, EventArgs e)
