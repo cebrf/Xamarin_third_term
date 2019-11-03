@@ -15,15 +15,14 @@ namespace T1_water_delivery
     {
         public class Product
         {
-            public Product(int numberOfProd_, string typeOfPr_) 
+            public Product(int numberOfProd) 
             {
-                typeOfPr = typeOfPr_;
-                numberOfProd = numberOfProd_;
+                this.numberOfProd = numberOfProd;
             }
 
-            string typeOfPr;
-            int numberOfProd;
-            Label currentProduct = new Label
+            public string typeOfPr;
+            protected int numberOfProd;
+            protected Label currentProduct = new Label
             {
                 FontSize = 20,
                 HorizontalOptions = LayoutOptions.StartAndExpand,
@@ -66,12 +65,44 @@ namespace T1_water_delivery
             }
         };
 
-        protected Dictionary<string, Product> allProducts = new Dictionary<string, Product>
+        public class WaterProduct : Product
         {
-            { "water", new Product(0, "water") },
-            { "biscuit", new Product(0, "biscuit") },
-            { "juice", new Product(0, "juice") },
-            { "nukacola", new Product(0, "nukacola") },
+            public WaterProduct(int numberOfProd) : base(numberOfProd) 
+            {
+                typeOfPr = "water";
+            }
+        }
+
+        public class BiscuitProduct : Product
+        {
+            public BiscuitProduct(int numberOfProd) : base(numberOfProd)
+            {
+                typeOfPr = "biscuit";
+            }
+        }
+
+        public class JuiceProduct : Product
+        {
+            public JuiceProduct(int numberOfProd) : base(numberOfProd)
+            {
+                typeOfPr = "juice";
+            }
+        }
+
+        public class NukacolaProduct : Product
+        {
+            public NukacolaProduct(int numberOfProd) : base(numberOfProd)
+            {
+                typeOfPr = "nukacola";
+            }
+        }
+
+        List<Product> allProducts = new List<Product>()
+        {
+            new WaterProduct(0),
+            new BiscuitProduct(0),
+            new JuiceProduct(0),
+            new NukacolaProduct(0)
         };
 
         static protected Dictionary<string, int> numberOfProducts = new Dictionary<string, int>();
@@ -81,9 +112,19 @@ namespace T1_water_delivery
             InitializeComponent();
         }
 
+        private List<string> getProductsTipes()
+        {
+            List<string> products = new List<string>();
+            for (int i = 0; i < allProducts.Count; i++)
+            {
+                products.Add(allProducts[i].typeOfPr);
+            }
+            return products;
+        }
         private void addNewProduct_Clicked(object sender, EventArgs e)
         {
-            SelectionOfProduct newPage = new SelectionOfProduct();
+            List<string> products = getProductsTipes();
+            SelectionOfProduct newPage = new SelectionOfProduct(products);
             newPage.Disappearing += (a, b) =>
             {
                 if (newPage.chosenProduct != null && newPage.numberOfProduct != 0)
@@ -91,18 +132,18 @@ namespace T1_water_delivery
                     if (numberOfProducts.ContainsKey(newPage.chosenProduct) && numberOfProducts[newPage.chosenProduct] != 0)
                     {
                         numberOfProducts[newPage.chosenProduct] += Convert.ToInt32(newPage.numberOfProduct);
-                        allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
+                        allProducts.Find(i => i.typeOfPr == newPage.chosenProduct).makeChange(numberOfProducts[newPage.chosenProduct]);
                     }
                     else
                     {
                         numberOfProducts[newPage.chosenProduct] = Convert.ToInt32(newPage.numberOfProduct);
-                        allProducts[newPage.chosenProduct].makeChange(numberOfProducts[newPage.chosenProduct]);
-                        allProducts[newPage.chosenProduct].deleteProduct.Clicked += (c, d) =>
+                        allProducts.Where(i => i.typeOfPr == newPage.chosenProduct).FirstOrDefault().makeChange(numberOfProducts[newPage.chosenProduct]);
+                        allProducts.Find(i => i.typeOfPr == newPage.chosenProduct).deleteProduct.Clicked += (c, d) =>
                         {
                             numberOfProducts[newPage.chosenProduct] = 0;
-                            mainStack.Children.Remove(allProducts[newPage.chosenProduct].st);
+                            mainStack.Children.Remove(allProducts.Find(i => i.typeOfPr == newPage.chosenProduct).st);
                         };
-                        mainStack.Children.Add(allProducts[newPage.chosenProduct].st);
+                        mainStack.Children.Add(allProducts.Find(i => i.typeOfPr == newPage.chosenProduct).st);
                     }
                 }
             };
@@ -113,14 +154,16 @@ namespace T1_water_delivery
         {
             if (mainStack.Children.Count == 0)
             {
-
+                await DisplayAlert("", "Basket is empty", "Ok");
             }
             else
             {
                 bool answer = await DisplayAlert("accept?", "Do you want to accept your order?", "Yes", "No");
                 if (answer)
                 {
-                    await DisplayAlert("Your order is accepted", "Your order is accepted.\nPlease expect.\n\nSoon you will be contacted to clarify your order", "OK");
+                    await DisplayAlert("Your order is accepted", 
+                        "Your order is accepted.\nPlease expect.\n\n" +
+                        "Soon you will be contacted to clarify your order", "OK");
                     mainStack.Children.Clear();
                     numberOfProducts.Clear();
                 }

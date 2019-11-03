@@ -21,7 +21,7 @@
                        Keyboard="Numeric"
                        HorizontalOptions="StartAndExpand"
                        MaxLength = "5"
-                       WidthRequest="200"
+                       WidthRequest="150"
                        Margin="10, 0, 0, 0"/>
                 <Stepper x:Name="numStep"
                          Increment="1"

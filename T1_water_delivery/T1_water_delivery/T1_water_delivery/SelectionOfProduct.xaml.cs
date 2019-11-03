@@ -14,8 +14,9 @@ namespace T1_water_delivery
     {
         public string chosenProduct = null;
         public double numberOfProduct = 0;
-        public SelectionOfProduct()
+        public SelectionOfProduct(List<string> products_)
         {
+            List<string> products = products_;
             InitializeComponent();
 
             numOf.Text = numberOfProduct.ToString();
@@ -25,8 +26,8 @@ namespace T1_water_delivery
                 numOf.Text = numberOfProduct.ToString();
             };
 
-            List<string> products = new List<string> { "water", "biscuit", "juice", "nukacola" };
-            List<string> pict = new List<string> { "water.jpg", "biscuit.jpg", "juice.jpg", "nukacola.png" };
+            //List<string> products = new List<string> { "water", "biscuit", "juice", "nukacola" };
+            //List<string> pict = new List<string> { "water.jpg", "biscuit.jpg", "juice.jpg", "nukacola.jpg" };
             choosePr.ItemsSource = products;
             choosePr.SelectedIndex = 0;
             chosenProduct = products[choosePr.SelectedIndex];
@@ -35,7 +36,7 @@ namespace T1_water_delivery
                 if (choosePr.SelectedIndex != -1)
                 {
                     chosenProduct = products[choosePr.SelectedIndex];
-                    ima.Source = ImageSource.FromFile(pict[choosePr.SelectedIndex]);
+                    ima.Source = ImageSource.FromFile(products[choosePr.SelectedIndex] + ".jpg");
                 }
             };
             mainStack.Children.Add(choosePr);
@@ -50,7 +51,7 @@ namespace T1_water_delivery
                 }
                 else
                 {
-                    numStep.Value = Double.Parse(numOf.Text);
+                    numStep.Value = int.Parse(numOf.Text);
                     numberOfProduct = numStep.Value;
                 }
             };
