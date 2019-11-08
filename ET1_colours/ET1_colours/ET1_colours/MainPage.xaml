@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ET1_colours.MainPage"
+             xmlns:local="clr-namespace:ET1_colours">
+
+    <StackLayout x:Name="mainSt"
+                 BackgroundColor="{Binding MyColourProperty}">
+        <Picker x:Name="picker"
+                BackgroundColor="{local:RgbColor R=102, G=102, B=153}"
+                TextColor="{local:RgbColor R=255, G=255, B=240}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="StartAndExpand"
+                HeightRequest="60"
+                Margin="10, 20, 10, 0"/>
+    </StackLayout>
+
+</ContentPage>
