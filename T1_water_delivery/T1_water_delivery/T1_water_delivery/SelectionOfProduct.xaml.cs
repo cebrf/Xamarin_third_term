@@ -26,8 +26,6 @@ namespace T1_water_delivery
                 numOf.Text = numberOfProduct.ToString();
             };
 
-            //List<string> products = new List<string> { "water", "biscuit", "juice", "nukacola" };
-            //List<string> pict = new List<string> { "water.jpg", "biscuit.jpg", "juice.jpg", "nukacola.jpg" };
             choosePr.ItemsSource = products;
             choosePr.SelectedIndex = 0;
             chosenProduct = products[choosePr.SelectedIndex];
