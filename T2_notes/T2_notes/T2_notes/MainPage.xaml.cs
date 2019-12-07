@@ -44,34 +44,38 @@ namespace T2_notes
                     };
 
                     PanGestureRecognizer panGesture = new PanGestureRecognizer();
-                    panGesture.PanUpdated += (object senderP, PanUpdatedEventArgs eP) =>
+                    newNote.GestureRecognizers.Add(panGesture);
+                    panGesture.PanUpdated += async (object panSender, PanUpdatedEventArgs panArgs) =>
                     {
-                        switch (eP.StatusType)
+                        switch (panArgs.StatusType)
                         {
                             case GestureStatus.Started:
-                                Content.TranslationX = eP.TotalX;
-                                Content.TranslationY = eP.TotalY;
+                                newNote.TranslationX = panArgs.TotalX;
+                                newNote.TranslationY = panArgs.TotalY;
                                 break;
 
                             case GestureStatus.Completed:
-                                if (leftContainer.Height <= rightContainer.Height)
-                                { 
-                                    if (Content.TranslationX > eP.TotalX)
+                                var ab = newNote.TranslationX; // = 0
+                                var ba = panArgs.TotalX; // = 0
+                                if (newNote.TranslationX > panArgs.TotalX)
+                                {
+                                    if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                                     {
+                                        //right.Children.Remove(panSender as Frame);
                                         leftContainer.Children.Remove(newNoteFrame);
                                     }
                                 }
                                 else
                                 {
-                                    if (Content.TranslationX < eP.TotalX)
+                                    if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                                     {
+                                        //right.Children.Remove(panSender as Frame);
                                         rightContainer.Children.Remove(newNoteFrame);
                                     }
                                 }
                                 break;
                         }
                     };
-                    newNote.GestureRecognizers.Add(panGesture);
 
                     if (leftContainer.Height <= rightContainer.Height)
                     {
