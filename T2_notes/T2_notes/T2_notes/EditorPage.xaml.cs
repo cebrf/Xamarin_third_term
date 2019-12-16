@@ -12,7 +12,7 @@ namespace T2_notes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditorPage : ContentPage
     {
-        public string text = null;
+        public string text { private set; get; }
         public DateTime timeChanged;
 
         public EditorPage()

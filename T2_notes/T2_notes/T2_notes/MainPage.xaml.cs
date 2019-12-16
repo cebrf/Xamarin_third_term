@@ -16,92 +16,87 @@ namespace T2_notes
         public MainPage()
         {
             InitializeComponent();
+
+
+            // add saved notes
         }
 
         private void add_Clicked(object sender, EventArgs e)
         {
-            EditorPage newPage = new EditorPage();
-            newPage.Disappearing += (object a, EventArgs b) =>
+            EditorPage editorPage = new EditorPage();
+            editorPage.Disappearing += (object editorPageSender, EventArgs editorPageargs) =>
             {
-                string text;
+                if (editorPage.text == null)
+                    return;
+
+                string text = editorPage.text;
                 DateTime timeChanged = DateTime.Now;
 
-                Label newNote = new Label();
-                newNote.Margin = new Thickness(0, 0, 0, 0);
-                newNote.LineBreakMode = LineBreakMode.TailTruncation;
-                text = newPage.text;
-                newNote.Text = text;
-
-                if (text != null)
+                Label newNote = new Label()
                 {
-                    Frame newNoteFrame = new Frame()
-                    {
-                        BackgroundColor = Color.Bisque,
-                        BorderColor = Xamarin.Forms.Color.DarkSeaGreen,
-                        Margin = new Thickness(0, 0, 0, 0),
-                        Padding = new Thickness(5, 5, 0, 5),
-                        Content = newNote
-                    };
+                    Margin = new Thickness(0, 0, 0, 0),
+                    LineBreakMode = LineBreakMode.TailTruncation,
+                    Text = text
+                };
+                Frame newNoteFrame = new Frame()
+                {
+                    BackgroundColor = Color.Bisque,
+                    BorderColor = Xamarin.Forms.Color.DarkSeaGreen,
+                    Margin = new Thickness(0, 0, 0, 0),
+                    Padding = new Thickness(5, 5, 0, 5),
+                    Content = newNote
+                };
 
-                    PanGestureRecognizer panGesture = new PanGestureRecognizer();
-                    newNote.GestureRecognizers.Add(panGesture);
-                    panGesture.PanUpdated += async (object panSender, PanUpdatedEventArgs panArgs) =>
+                var pan = new PanGestureRecognizer();
+                double totalX = 0;
+                pan.PanUpdated += async (panSender, panArgs) =>
+                {
+                    switch (panArgs.StatusType)
                     {
-                        switch (panArgs.StatusType)
-                        {
-                            case GestureStatus.Started:
-                                newNote.TranslationX = panArgs.TotalX;
-                                newNote.TranslationY = panArgs.TotalY;
-                                break;
-
-                            case GestureStatus.Completed:
-                                var ab = newNote.TranslationX; // = 0
-                                var ba = panArgs.TotalX; // = 0
-                                if (newNote.TranslationX > panArgs.TotalX)
+                        case GestureStatus.Canceled:
+                        case GestureStatus.Started:
+                            newNoteFrame.TranslationX = 0;
+                            break;
+                        case GestureStatus.Completed:
+                            if (totalX > 0)  // < 0 for left
+                            {
+                                if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                                 {
-                                    if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
-                                    {
-                                        //right.Children.Remove(panSender as Frame);
-                                        leftContainer.Children.Remove(newNoteFrame);
-                                    }
+                                    rightContainer.Children.Remove(panSender as Frame);
                                 }
-                                else
-                                {
-                                    if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
-                                    {
-                                        //right.Children.Remove(panSender as Frame);
-                                        rightContainer.Children.Remove(newNoteFrame);
-                                    }
-                                }
-                                break;
-                        }
-                    };
-
-                    if (leftContainer.Height <= rightContainer.Height)
-                    {
-                        leftContainer.Children.Add(newNoteFrame);
+                                totalX = 0;
+                            }
+                            newNoteFrame.TranslationX = 0;
+                            break;
+                        case GestureStatus.Running:
+                            if (panArgs.TotalX > 0)  // < 0 for left
+                            {
+                                newNoteFrame.TranslationX = panArgs.TotalX;
+                                totalX = panArgs.TotalX;
+                            }
+                            break;
                     }
-                    else
-                    {
-                        rightContainer.Children.Add(newNoteFrame);
-                    }
+                };
+                newNoteFrame.GestureRecognizers.Add(pan);
+                rightContainer.Children.Add(newNoteFrame);
 
-                    var tap = new TapGestureRecognizer();
-                    tap.Tapped += (tapSender, tapEven) =>
+                
+
+                var tap = new TapGestureRecognizer();
+                tap.Tapped += (tapSender, tapEven) =>
+                {
+                    EditorPage editorPage_ = new EditorPage(timeChanged, text);
+                    Navigation.PushAsync(editorPage_);
+                    editorPage_.Disappearing += (_, __) =>
                     {
-                        EditorPage editorPage = new EditorPage(timeChanged, text);
-                        Navigation.PushAsync(editorPage);
-                        editorPage.Disappearing += (_, __) =>
-                        {
-                            text = editorPage.text;
-                            newNote.Text = text;
-                            timeChanged = editorPage.timeChanged;
-                        };
+                        text = editorPage_.text;
+                        newNote.Text = text;
+                        timeChanged = editorPage_.timeChanged;
                     };
-                    newNote.GestureRecognizers.Add(tap);
-                }
+                };
+                newNote.GestureRecognizers.Add(tap);
             };
-            Navigation.PushAsync(newPage);
+            Navigation.PushAsync(editorPage);
         }
     }
 }
