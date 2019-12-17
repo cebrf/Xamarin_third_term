@@ -13,7 +13,7 @@ namespace T2_notes
     public partial class EditorPage : ContentPage
     {
         public string text { private set; get; }
-        public DateTime timeChanged;
+        public DateTime timeChanged { private set; get; }
 
         public EditorPage()
         {

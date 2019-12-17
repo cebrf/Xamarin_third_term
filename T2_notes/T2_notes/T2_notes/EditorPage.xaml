@@ -10,9 +10,9 @@
               BackgroundColor="SlateGray">
             <Label x:Name="timeAndSymb"
                    Margin="10, 0, 0, 20"
-                   TextColor="Bisque"/>
+                   TextColor="WhiteSmoke"/>
             <Editor x:Name="textHolder"
-                    TextColor="Bisque"
+                    TextColor="WhiteSmoke"
                     TextChanged="textHolder_TextChanged"/>
         </Grid>
     </ContentPage.Content>

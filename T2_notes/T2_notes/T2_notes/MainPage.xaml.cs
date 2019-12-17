@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +31,7 @@ namespace T2_notes
                 BackgroundColor = Color.Bisque,
                 BorderColor = Xamarin.Forms.Color.DarkSeaGreen,
                 Margin = new Thickness(0, 0, 0, 0),
-                Padding = new Thickness(5, 5, 0, 5),
+                Padding = new Thickness(15, 15, 0, 15),
                 Content = newNote
             };
 
@@ -106,9 +109,53 @@ namespace T2_notes
         public MainPage()
         {
             InitializeComponent();
+            Disappearing += EventPage_OnDisappearing;
 
 
-            // add saved notes
+            string newFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "savedNotes.json");
+            if (File.Exists(newFile))
+            {
+                JObject savedNotes = JObject.Parse(File.ReadAllText(newFile));
+                /*JArray jArray = JArray.Parse((string)savedNotes["left"]);*/
+                foreach (JObject item in savedNotes["left"])
+                {
+                    addNote((string)item.GetValue("text"));
+                }
+                //jArray = JArray.Parse((string)savedNotes["right"]);
+                foreach (JObject item in savedNotes["right"])
+                {
+                    addNote((string)item.GetValue("text"));
+                }
+            }
+        }
+
+        private void EventPage_OnDisappearing(object sender, EventArgs e)
+        {
+            string newFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "savedNotes.json");
+
+            JArray left = new JArray();
+            JArray right = new JArray();
+            foreach (Frame note in leftContainer.Children)
+            {
+                left.Add(new JObject(
+                    //new JProperty("time", 1,
+                    new JProperty("text", ((Label)note.Content).Text)
+                ));
+            }
+            foreach (Frame note in rightContainer.Children)
+            {
+                right.Add(new JObject(
+                    new JProperty("text", ((Label)note.Content).Text)
+                ));
+            }
+
+            JObject savedNotes = new JObject
+            (
+                new JProperty("left", left),
+                new JProperty("right", right)
+            );
+            File.WriteAllText(newFile, savedNotes.ToString());
+
         }
 
         private void add_Clicked(object sender, EventArgs e)
