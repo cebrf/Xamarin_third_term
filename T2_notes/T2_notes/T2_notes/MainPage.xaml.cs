@@ -16,6 +16,26 @@ namespace T2_notes
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        protected void checkCount()
+        {
+            while (leftContainer.Children.Count <= rightContainer.Children.Count - 2) // add in left from right
+            {
+                var note = rightContainer.Children[rightContainer.Children.Count - 1];
+                rightContainer.Children.Remove(note);
+
+                leftContainer.Children.Add(note);
+            }
+
+            while (rightContainer.Children.Count <= leftContainer.Children.Count - 2) // add in right from left
+            {
+                var note = leftContainer.Children[leftContainer.Children.Count - 1];
+                leftContainer.Children.Remove(note);
+
+                rightContainer.Children.Add(note);
+            }
+
+        }
+
         protected void addNote(string text, DateTime timeChanged, char pos = ' ')
         {            
             Label noteText = new Label()
@@ -61,6 +81,7 @@ namespace T2_notes
                             if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                             {
                                 rightContainer.Children.Remove(newNoteFrame);
+                                checkCount();
                             }
                             totalX = 0;
                         }
@@ -69,6 +90,7 @@ namespace T2_notes
                             if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                             {
                                 leftContainer.Children.Remove(newNoteFrame);
+                                checkCount();
                             }
                             totalX = 0;
                         }
