@@ -16,16 +16,26 @@ namespace T2_notes
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        protected void addNote(string text)
-        {
-            DateTime timeChanged = DateTime.Now;
-            
-            Label newNote = new Label()
+        protected void addNote(string text, DateTime timeChanged, char pos = ' ')
+        {            
+            Label noteText = new Label()
             {
-                Margin = new Thickness(0, 0, 0, 0),
+                Margin = new Thickness(0, 0, 0, 5),
                 LineBreakMode = LineBreakMode.TailTruncation,
                 Text = text
             };
+            Label noteTime = new Label()
+            {
+                Margin = new Thickness(0, 0, 0, 0),
+                LineBreakMode = LineBreakMode.TailTruncation,
+                Text = timeChanged.ToString()
+            };
+            StackLayout newNote = new StackLayout()
+            {
+                Margin = new Thickness(0, 0, 0, 0),
+                Children = { noteText, noteTime }
+            };
+
             Frame newNoteFrame = new Frame()
             {
                 BackgroundColor = Color.Bisque,
@@ -46,31 +56,31 @@ namespace T2_notes
                         newNoteFrame.TranslationX = 0;
                         break;
                     case GestureStatus.Completed:
-                        if (totalX > 0 && rightContainer.Children.Contains(panSender as Frame))
+                        if (totalX > 0 && rightContainer.Children.Contains(newNoteFrame))
                         {
                             if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                             {
-                                rightContainer.Children.Remove(panSender as Frame);
+                                rightContainer.Children.Remove(newNoteFrame);
                             }
                             totalX = 0;
                         }
-                        else if (totalX < 0 && leftContainer.Children.Contains(panSender as Frame))
+                        else if (totalX < 0 && leftContainer.Children.Contains(newNoteFrame))
                         {
                             if (await DisplayAlert("Confirm the deleting", "Are you sure?", "Yes!", "No"))
                             {
-                                leftContainer.Children.Remove(panSender as Frame);
+                                leftContainer.Children.Remove(newNoteFrame);
                             }
                             totalX = 0;
                         }
                         newNoteFrame.TranslationX = 0;
                         break;
                     case GestureStatus.Running:
-                        if (panArgs.TotalX > 0 && rightContainer.Children.Contains(panSender as Frame))
+                        if (panArgs.TotalX > 0 && rightContainer.Children.Contains(newNoteFrame))
                         {
                             newNoteFrame.TranslationX = panArgs.TotalX;
                             totalX = panArgs.TotalX;
                         }
-                        else if (panArgs.TotalX < 0 && leftContainer.Children.Contains(panSender as Frame))
+                        else if (panArgs.TotalX < 0 && leftContainer.Children.Contains(newNoteFrame))
                         {
                             newNoteFrame.TranslationX = panArgs.TotalX;
                             totalX = panArgs.TotalX;
@@ -78,15 +88,26 @@ namespace T2_notes
                         break;
                 }
             };
-            newNoteFrame.GestureRecognizers.Add(pan);
+            newNote.GestureRecognizers.Add(pan);
 
-            if (leftContainer.Height <= rightContainer.Height)
+            if (pos == 'l')
             {
                 leftContainer.Children.Add(newNoteFrame);
             }
-            else
+            else if (pos == 'r')
             {
                 rightContainer.Children.Add(newNoteFrame);
+            }
+            else
+            {
+                if (leftContainer.Children.Count <= rightContainer.Children.Count)
+                {
+                    leftContainer.Children.Add(newNoteFrame);
+                }
+                else
+                {
+                    rightContainer.Children.Add(newNoteFrame);
+                }
             }
 
 
@@ -99,8 +120,9 @@ namespace T2_notes
                 editorPage_.Disappearing += (_, __) =>
                 {
                     text = editorPage_.text;
-                    newNote.Text = text;
+                    noteText.Text = text;
                     timeChanged = editorPage_.timeChanged;
+                    noteTime.Text = timeChanged.ToString();
                 };
             };
             newNote.GestureRecognizers.Add(tap);
@@ -116,15 +138,14 @@ namespace T2_notes
             if (File.Exists(newFile))
             {
                 JObject savedNotes = JObject.Parse(File.ReadAllText(newFile));
-                /*JArray jArray = JArray.Parse((string)savedNotes["left"]);*/
                 foreach (JObject item in savedNotes["left"])
                 {
-                    addNote((string)item.GetValue("text"));
+                    addNote((string)item.GetValue("text"), DateTime.Parse((string)item.GetValue("time")), 'l');
                 }
                 //jArray = JArray.Parse((string)savedNotes["right"]);
                 foreach (JObject item in savedNotes["right"])
                 {
-                    addNote((string)item.GetValue("text"));
+                    addNote((string)item.GetValue("text"), DateTime.Parse((string)item.GetValue("time")), 'r');
                 }
             }
         }
@@ -138,14 +159,16 @@ namespace T2_notes
             foreach (Frame note in leftContainer.Children)
             {
                 left.Add(new JObject(
-                    //new JProperty("time", 1,
-                    new JProperty("text", ((Label)note.Content).Text)
+                    new JProperty("text", ((Label)((StackLayout)note.Content).Children[0]).Text),
+                    new JProperty("time", ((Label)((StackLayout)note.Content).Children[1]).Text)
                 ));
             }
             foreach (Frame note in rightContainer.Children)
             {
                 right.Add(new JObject(
-                    new JProperty("text", ((Label)note.Content).Text)
+                    //new JProperty("text", ((Label)note.Content).Text)
+                    new JProperty("text", ((Label)((StackLayout)note.Content).Children[0]).Text),
+                    new JProperty("time", ((Label)((StackLayout)note.Content).Children[1]).Text)
                 ));
             }
 
@@ -167,7 +190,8 @@ namespace T2_notes
                     return;
 
                 string text = editorPage.text;
-                addNote(text);
+                DateTime timeChanged = DateTime.Now;
+                addNote(text, timeChanged);
             };
             Navigation.PushAsync(editorPage);
         }
