@@ -82,6 +82,7 @@ namespace T2_notes
                             {
                                 rightContainer.Children.Remove(newNoteFrame);
                                 checkCount();
+                                safeNotes();
                             }
                             totalX = 0;
                         }
@@ -91,6 +92,7 @@ namespace T2_notes
                             {
                                 leftContainer.Children.Remove(newNoteFrame);
                                 checkCount();
+                                safeNotes();
                             }
                             totalX = 0;
                         }
@@ -153,8 +155,6 @@ namespace T2_notes
         public MainPage()
         {
             InitializeComponent();
-            Disappearing += EventPage_OnDisappearing;
-
 
             string newFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "savedNotes.json");
             if (File.Exists(newFile))
@@ -164,7 +164,6 @@ namespace T2_notes
                 {
                     addNote((string)item.GetValue("text"), DateTime.Parse((string)item.GetValue("time")), 'l');
                 }
-                //jArray = JArray.Parse((string)savedNotes["right"]);
                 foreach (JObject item in savedNotes["right"])
                 {
                     addNote((string)item.GetValue("text"), DateTime.Parse((string)item.GetValue("time")), 'r');
@@ -172,7 +171,7 @@ namespace T2_notes
             }
         }
 
-        private void EventPage_OnDisappearing(object sender, EventArgs e)
+        private void safeNotes()
         {
             string newFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "savedNotes.json");
 
@@ -188,7 +187,6 @@ namespace T2_notes
             foreach (Frame note in rightContainer.Children)
             {
                 right.Add(new JObject(
-                    //new JProperty("text", ((Label)note.Content).Text)
                     new JProperty("text", ((Label)((StackLayout)note.Content).Children[0]).Text),
                     new JProperty("time", ((Label)((StackLayout)note.Content).Children[1]).Text)
                 ));
@@ -214,6 +212,7 @@ namespace T2_notes
                 string text = editorPage.text;
                 DateTime timeChanged = DateTime.Now;
                 addNote(text, timeChanged);
+                safeNotes();
             };
             Navigation.PushAsync(editorPage);
         }
