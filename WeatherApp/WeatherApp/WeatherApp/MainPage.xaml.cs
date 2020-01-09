@@ -15,11 +15,21 @@ namespace WeatherApp
     {
         public MainPage()
         {
+            //TODO load chosen city from json
             InitializeComponent();
         }
 
         private void ChooseCity_Clicked(object sender, EventArgs e)
         {
+            ChooseCityPage cityPage = new ChooseCityPage();
+            cityPage.Disappearing += (object cityPageSender, EventArgs cityPageargs) =>
+            {
+                // TODO get name of city
+                // TODO get info about city
+
+                //TODO save chosen city to json
+            };
+            Navigation.PushAsync(cityPage);
         }
     }
 }

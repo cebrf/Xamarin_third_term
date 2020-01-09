@@ -8,6 +8,7 @@
              BackgroundImageSource="rain.jpg"
              NavigationPage.HasNavigationBar="True"
              Title="Weather">
+
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="chooseCity"
                      Text="choose city"
@@ -17,9 +18,12 @@
     
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Weather!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label x:Name="cityName"
+               Text="Weather!"
+               FontSize="Large"
+               TextColor="FloralWhite"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>

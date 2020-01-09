@@ -14,6 +14,7 @@ namespace WeatherApp
             {
                 BarBackgroundColor = Color.DarkSlateGray,
                 BarTextColor = Color.GhostWhite,
+                
             };
 
         }
