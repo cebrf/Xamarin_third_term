@@ -17,5 +17,9 @@ namespace WeatherApp
         {
             InitializeComponent();
         }
+
+        private void ChooseCity_Clicked(object sender, EventArgs e)
+        {
+        }
     }
 }

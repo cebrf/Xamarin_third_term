@@ -5,8 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="WeatherApp.MainPage"
-             BackgroundImageSource="rain.jpg">
-
+             BackgroundImageSource="rain.jpg"
+             NavigationPage.HasNavigationBar="True"
+             Title="Weather">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="chooseCity"
+                     Text="choose city"
+                     Order="Secondary"
+                     Clicked="ChooseCity_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
     <StackLayout>
         <!-- Place new controls here -->
         <Label Text="Weather!" 

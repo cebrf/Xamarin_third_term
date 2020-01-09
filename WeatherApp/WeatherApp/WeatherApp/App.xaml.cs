@@ -10,7 +10,12 @@ namespace WeatherApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.DarkSlateGray,
+                BarTextColor = Color.GhostWhite,
+            };
+
         }
 
         protected override void OnStart()
