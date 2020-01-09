@@ -169,6 +169,32 @@ namespace T2_notes
                     addNote((string)item.GetValue("text"), DateTime.Parse((string)item.GetValue("time")), 'r');
                 }
             }
+
+            findEntry.TextChanged += (object sender, TextChangedEventArgs e) =>
+            {
+                foreach (Frame note in leftContainer.Children)
+                {
+                    if (!((Label)((StackLayout)note.Content).Children[0]).Text.Contains(findEntry.Text) && ((Label)((StackLayout)note.Content).Children[0]).Text != null)
+                    {
+                        note.IsVisible = false;
+                    }
+                    else
+                    {
+                        note.IsVisible = true;
+                    }
+                }
+                foreach (Frame note in rightContainer.Children)
+                {
+                    if (!((Label)((StackLayout)note.Content).Children[0]).Text.Contains(findEntry.Text) && ((Label)((StackLayout)note.Content).Children[0]).Text != null)
+                    {
+                        note.IsVisible = false;
+                    }
+                    else
+                    {
+                        note.IsVisible = true;
+                    }
+                }
+            };
         }
 
         private void safeNotes()

@@ -5,6 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="T2_notes.EditorPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="addButton" Text="+" Clicked="addButton_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid x:Name="container"
               BackgroundColor="SlateGray">

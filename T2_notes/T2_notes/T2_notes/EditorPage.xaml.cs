@@ -43,8 +43,15 @@ namespace T2_notes
 
         private void textHolder_TextChanged(object sender, TextChangedEventArgs e)
         {
-            text = textHolder.Text;
+            /*text = textHolder.Text;
+            timeChanged = DateTime.Now;*/
+        }
+
+        private void addButton_Clicked(object sender, EventArgs e)
+        {
             timeChanged = DateTime.Now;
+            text = textHolder.Text;
+            Navigation.PopAsync();
         }
     }
 }
