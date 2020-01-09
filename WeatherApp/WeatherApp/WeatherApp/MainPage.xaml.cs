@@ -13,6 +13,7 @@ namespace WeatherApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public List<string> chosenCities = new List<string>() { "Moscow", "London", "Vladivostok" };
         public MainPage()
         {
             //TODO load chosen city from json
@@ -21,13 +22,20 @@ namespace WeatherApp
 
         private void ChooseCity_Clicked(object sender, EventArgs e)
         {
-            ChooseCityPage cityPage = new ChooseCityPage();
+            ChooseCityPage cityPage = new ChooseCityPage(chosenCities);
             cityPage.Disappearing += (object cityPageSender, EventArgs cityPageargs) =>
             {
                 // TODO get name of city
-                // TODO get info about city
+                var chosenCity = cityPage.chosenCity;
+                if (chosenCity != null)
+                {
+                    cityName.Text = chosenCity;
 
-                //TODO save chosen city to json
+                    // TODO get info about city
+
+                    //TODO save chosen city to json
+                }
+
             };
             Navigation.PushAsync(cityPage);
         }
