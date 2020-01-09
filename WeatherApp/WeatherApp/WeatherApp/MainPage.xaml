@@ -43,45 +43,50 @@
                      Clicked="ChooseCity_Clicked"/>
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <ScrollView>
-            <StackLayout Padding="10">
-                <Label Text="Location" 
+    <ScrollView>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Padding="10">
+                    <Label Text="Location" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Title}" 
+                    <Label Text="{Binding Title}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Temperature" 
+                    <Label Text="Temperature" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Main.Temperature}" 
+                    <Label Text="{Binding Main.Temperature}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Wind Speed" 
+                    <Label Text="Wind Speed" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Wind.Speed}" 
+                    <Label Text="{Binding Wind.Speed}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Humidity" 
+                    <Label Text="Humidity" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Main.Humidity}" 
+                    <Label Text="{Binding Main.Humidity}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Visibility" 
+                    <Label Text="Visibility" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Weather[0].Visibility}" 
+                    <Label Text="{Binding Weather[0].Visibility}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Time of Sunrise" 
+                    <Label Text="Time of Sunrise" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
+                    <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
                        Style="{StaticResource labelResultStyle}" />
 
-                <Label Text="Time of Sunset" 
+                    <Label Text="Time of Sunset" 
                        Style="{StaticResource labelStyle}" />
-                <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
+                    <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
                        Style="{StaticResource labelResultStyle}" />
-            </StackLayout>
-        </ScrollView>
-    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            
+            <BoxView Color="Bisque"
+                 HeightRequest="400"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
