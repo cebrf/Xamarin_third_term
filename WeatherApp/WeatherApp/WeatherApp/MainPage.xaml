@@ -3,11 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:WeatherApp"
              mc:Ignorable="d"
              x:Class="WeatherApp.MainPage"
              BackgroundImageSource="rain.jpg"
              NavigationPage.HasNavigationBar="True"
              Title="Weather">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Large" />
+                <Setter Property="TextColor" 
+                        Value="Gray" />
+                <Setter Property="TextColor"
+                        Value="GhostWhite"/>
+            </Style>
+
+            <Style x:Key="labelResultStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Large" />
+                <Setter Property="Margin" 
+                        Value="10,0,0,0" />
+                <Setter Property="TextColor"
+                        Value="GhostWhite"/>
+            </Style>
+
+            <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="chooseCity"
@@ -15,15 +42,46 @@
                      Order="Secondary"
                      Clicked="ChooseCity_Clicked"/>
     </ContentPage.ToolbarItems>
-    
+
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label x:Name="cityName"
-               Text="Weather!"
-               FontSize="Large"
-               TextColor="FloralWhite"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Location" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Title}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Temperature" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Main.Temperature}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Wind Speed" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Wind.Speed}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Humidity" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Main.Humidity}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Visibility" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Weather[0].Visibility}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Time of Sunrise" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Time of Sunset" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
+                       Style="{StaticResource labelResultStyle}" />
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>

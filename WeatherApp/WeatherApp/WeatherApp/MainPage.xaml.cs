@@ -13,11 +13,16 @@ namespace WeatherApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public List<string> chosenCities = new List<string>() { "Moscow", "London", "Vladivostok" };
+        public List<string> chosenCities = new List<string>() { "Paris", "Moscow", "London", "Vladivostok" };
+        RestService restService;
+
         public MainPage()
         {
-            //TODO load chosen city from json
             InitializeComponent();
+
+            //TODO load chosen city from json
+            restService = new RestService();
+            getDayWeather(chosenCities[0]);
         }
 
         private void ChooseCity_Clicked(object sender, EventArgs e)
@@ -25,11 +30,10 @@ namespace WeatherApp
             ChooseCityPage cityPage = new ChooseCityPage(chosenCities);
             cityPage.Disappearing += (object cityPageSender, EventArgs cityPageargs) =>
             {
-                // TODO get name of city
                 var chosenCity = cityPage.chosenCity;
                 if (chosenCity != null)
                 {
-                    cityName.Text = chosenCity;
+                    getDayWeather(chosenCity);
 
                     // TODO get info about city
 
@@ -38,6 +42,19 @@ namespace WeatherApp
 
             };
             Navigation.PushAsync(cityPage);
+        }
+        async void getDayWeather(string cityName)
+        {
+            WeatherData weatherData = await restService.GetWeatherData(GenerateRequestUri(Constants.OpenWeatherMapEndpoint, cityName));
+            BindingContext = weatherData;
+        }
+        string GenerateRequestUri(string endpoint, string cityName)
+        {
+            string requestUri = endpoint;
+            requestUri += $"?q={cityName}";
+            requestUri += "&units=metric"; // or units=imperials
+            requestUri += $"&APPID={Constants.OpenWeatherMapAPIKey}";
+            return requestUri;
         }
     }
 }

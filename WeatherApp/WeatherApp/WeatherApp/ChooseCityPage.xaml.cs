@@ -44,7 +44,7 @@ namespace WeatherApp
 
         private void addCity_Clicked(object sender, EventArgs e)
         {
-
+            // TODO new page with find of city (need check if exist. Or not save incorrect val. ! You can choose only from list of cities, which contains your letters)
         }
     }
 }
