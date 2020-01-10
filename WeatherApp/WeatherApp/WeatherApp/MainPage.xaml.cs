@@ -16,21 +16,21 @@ namespace WeatherApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public List<string> chosenCities = new List<string>() { "Paris", "Moscow", "London", "Vladivostok" };
         RestService restService;
 
         public MainPage()
         {
             InitializeComponent();
 
+            App.chosenCities = new List<string>() { "Paris", "Moscow", "London", "Vladivostok" };
             //TODO load chosen city from json
             restService = new RestService();
-            getDayWeather(chosenCities[0]);
+            getDayWeather(App.chosenCities[0]);
         }
 
         private void ChooseCity_Clicked(object sender, EventArgs e)
         {
-            ChooseCityPage cityPage = new ChooseCityPage(chosenCities);
+            ChooseCityPage cityPage = new ChooseCityPage();
             cityPage.Disappearing += (object cityPageSender, EventArgs cityPageargs) =>
             {
                 var chosenCity = cityPage.chosenCity;

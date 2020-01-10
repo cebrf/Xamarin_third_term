@@ -18,29 +18,6 @@ namespace WeatherApp
     {
         public string chosenCity;
         public JArray AllCities;
-        /*public JArray AllCities = JArray.Load(
-            new JsonTextReader(File.OpenText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "city.list.json"))));*/
-        /*public string ReadResource(string name)
-        {
-            // Determine path
-            var assembly = Assembly.GetExecutingAssembly();
-            AllCities = JArray.Load(
-            new JsonTextReader(File.OpenText(assembly.GetManifestResourceNames()
-                    .Single(str => str.EndsWith("city.list.json")))));
-            string resourcePath = name;
-            // Format: "{Namespace}.{Folder}.{filename}.{Extension}"
-            if (!name.StartsWith("12"))
-            {
-                resourcePath = assembly.GetManifestResourceNames()
-                    .Single(str => str.EndsWith(name));
-            }
-
-            using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
-            using (StreamReader reader = new StreamReader(stream))
-            {
-                return reader.ReadToEnd();
-            }
-        }*/
         void GetJsonData()
         {
             string jsonFileName = "city.list.json";
@@ -57,11 +34,6 @@ namespace WeatherApp
         {
             InitializeComponent();
             GetJsonData();
-
-            /*var assembly = Assembly.GetExecutingAssembly();
-            AllCities = JArray.Load(
-            new JsonTextReader(File.OpenText(assembly.GetManifestResourceNames()
-                    .Single(str => str.EndsWith("city.list.json")))));*/
         }
 
         private void cityInput_TextChanged(object sender, TextChangedEventArgs e)

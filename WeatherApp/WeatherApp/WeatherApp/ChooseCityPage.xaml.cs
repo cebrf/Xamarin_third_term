@@ -13,11 +13,11 @@ namespace WeatherApp
     public partial class ChooseCityPage : ContentPage
     {
         public string chosenCity = null;
-        public ChooseCityPage(List<string> cities)
+        public ChooseCityPage()
         {
             InitializeComponent();
 
-            foreach (var cityName in cities)
+            foreach (var cityName in App.chosenCities)
             {
                 Label cityLabel = new Label()
                 {
@@ -69,8 +69,8 @@ namespace WeatherApp
                 cityFrame.GestureRecognizers.Add(tapGestureRecognizer);
                 chosenCities.Children.Add(cityFrame);
 
-
                 chosenCity = addPage.chosenCity;
+                App.chosenCities.Add(chosenCity);
                 Navigation.PopAsync();
             };
             Navigation.PushAsync(addPage);
