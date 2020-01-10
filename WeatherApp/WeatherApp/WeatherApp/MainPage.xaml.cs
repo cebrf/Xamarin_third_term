@@ -22,7 +22,7 @@ namespace WeatherApp
         {
             InitializeComponent();
 
-            App.chosenCities = new List<string>() { "Paris", "Moscow", "London", "Vladivostok" };
+            App.chosenCities = new List<string>() { "Paris", "Moscow", "London", "Vladivostok, RU" };
             //TODO load chosen city from json
             restService = new RestService();
             getDayWeather(App.chosenCities[0]);

@@ -70,7 +70,8 @@ namespace WeatherApp
                 chosenCities.Children.Add(cityFrame);
 
                 chosenCity = addPage.chosenCity;
-                App.chosenCities.Add(chosenCity);
+                if (!App.chosenCities.Contains(chosenCity))
+                    App.chosenCities.Add(chosenCity);
                 Navigation.PopAsync();
             };
             Navigation.PushAsync(addPage);

@@ -18,6 +18,7 @@ namespace WeatherApp
     {
         public string chosenCity;
         public JArray AllCities;
+        //SortedSet<CityData> AllCities;
         void GetJsonData()
         {
             string jsonFileName = "city.list.json";
@@ -28,6 +29,14 @@ namespace WeatherApp
                 var jsonString = reader.ReadToEnd();
                 AllCities = JsonConvert.DeserializeObject<JArray>(jsonString);
             }
+
+            // TODO use this
+            // deserialize JSON directly from a file
+            /*using (StreamReader reader = new System.IO.StreamReader(stream))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                AllCities = (SortedSet<CityData>)serializer.Deserialize(reader, typeof(CityData[]));
+            }*/
         }
 
         public AddCityPage()
@@ -39,15 +48,16 @@ namespace WeatherApp
         private void cityInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             citiesContainer.Children.Clear();
-            if (cityInput.Text == null)
+            if (cityInput.Text == null || cityInput.Text == "")
                 return;
 
             foreach (var city in AllCities
-                .Where(obj => obj["name"].Value<string>().StartsWith(cityInput.Text)))
+                .Where(obj => obj["name"].Value<string>().ToLower().StartsWith(cityInput.Text)))
             {
                 Label cityLabel = new Label()
                 {
                     Margin = new Thickness(5, 0, 0, 5),
+                    TextColor = Color.GhostWhite,
                     LineBreakMode = LineBreakMode.TailTruncation,
                     Text = city["name"].Value<string>() + ",  " + city["country"].Value<string>()
                 };

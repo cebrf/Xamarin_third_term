@@ -75,7 +75,7 @@
                     </StackLayout>
 
                     <Image x:Name="backgroundImage"
-                           Source="{Binding Weather[0].Icon, StringFormat='https://openweathermap.org/img/w/{0}.png'}"
+                           Source="{Binding Weather[0].Icon, StringFormat='https://openweathermap.org/img/wn/{0}@2x.png'}"
                            HeightRequest="100"
                            Margin="0, 0, 0, 0"/>
                     <Label Text="{Binding Weather[0].Description}" 
@@ -84,19 +84,19 @@
                 </StackLayout>
             </ScrollView>
 
-            <ScrollView Orientation="Horizontal">
+            <!--<ScrollView Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal">
                     <BoxView Color="Bisque"
                              WidthRequest="400"
                              HeightRequest="500"/>
                     <StackLayout VerticalOptions="Center" HorizontalOptions="Center"
                                  BackgroundColor="Beige">
-                        <Label Text="Image UriSource Xaml"/>
-                        <Image Source="http://i.pinimg.com/736x/fb/2e/c6/fb2ec6ba69a72386f472b7266eb269c7--personal-logo-visual-identity.jpg" />
-                        <Label Text="example-app.png gets downloaded from xamarin.com" />
                     </StackLayout>
                 </StackLayout>
-            </ScrollView>
+            </ScrollView>-->
+            <BoxView Color="Bisque"
+                     WidthRequest="400"
+                     HeightRequest="500"/>
         </StackLayout>
     </ScrollView>
 
