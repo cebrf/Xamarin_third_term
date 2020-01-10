@@ -2,6 +2,11 @@
 
 namespace WeatherApp
 {
+    public class MainPageWeather
+    {
+        public WeatherData WeatherData { get; set; }
+        public ForecastData ForecastData { get; set; }
+    }
     public class WeatherData
     {
         [JsonProperty("name")]
@@ -41,6 +46,40 @@ namespace WeatherApp
         public long Cod { get; set; }
     }
 
+    public class ForecastData
+    {
+        [JsonProperty("cod")]
+        public long Cod { get; set; }
+
+        [JsonProperty("message")]
+        public double Message { get; set; }
+
+        [JsonProperty("cnt")]
+        public double Cnt { get; set; }
+
+        [JsonProperty("list")]
+        public Forecast[] Forecast { get; set; }
+    }
+
+    public class Forecast
+    {
+        [JsonProperty("dt")]
+        public int Dt { get; set; }
+        [JsonProperty("main")]
+        public Main Main { get; set; }
+
+        [JsonProperty("weather")]
+        public Weather[] Weather { get; set; }
+
+        [JsonProperty("clouds")]
+        public Clouds Clouds { get; set; }
+
+        [JsonProperty("wind")]
+        public Wind Wind { get; set; }
+
+        [JsonProperty("dt_txt")]
+        public string Dt_txt { get; set; }
+    }
 
     public class Clouds
     {
@@ -119,4 +158,6 @@ namespace WeatherApp
         [JsonProperty("deg")]
         public long Deg { get; set; }
     }
+
+
 }

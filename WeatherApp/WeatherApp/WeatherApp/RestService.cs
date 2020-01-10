@@ -20,10 +20,12 @@ namespace WeatherApp
             WeatherData weatherData = null;
             try
             {
-                var response = await _client.GetAsync(query);
+                var response = await _client.GetAsync(query)
+                    .ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
-                    var content = await response.Content.ReadAsStringAsync();
+                    var content = await response.Content.ReadAsStringAsync()
+                        .ConfigureAwait(false);
                     weatherData = JsonConvert.DeserializeObject<WeatherData>(content);
                 }
             }
@@ -33,6 +35,25 @@ namespace WeatherApp
             }
 
             return weatherData;
+        }
+
+        public async Task<ForecastData> GetForecastData(string query)
+        {
+            ForecastData forecastData = null;
+            try
+            {
+                var response = await _client.GetAsync(query);
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    forecastData = JsonConvert.DeserializeObject<ForecastData>(content);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("\t\terror {0}", ex.Message);
+            }
+            return forecastData;
         }
     }
 }
