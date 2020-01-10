@@ -42,9 +42,39 @@ namespace WeatherApp
             }
         }
 
-        private void addCity_Clicked(object sender, EventArgs e)
+        private void addCity_Clicked(object sender, EventArgs eArgs)
         {
             // TODO new page with find of city (need check if exist. Or not save incorrect val. ! You can choose only from list of cities, which contains your letters)
+            AddCityPage addPage = new AddCityPage();
+            addPage.Disappearing += (s, e) =>
+            {
+                Label cityLabel = new Label()
+                {
+                    Margin = new Thickness(5, 0, 0, 5),
+                    LineBreakMode = LineBreakMode.TailTruncation,
+                    Text = addPage.chosenCity
+                };
+                Frame cityFrame = new Frame()
+                {
+                    BackgroundColor = Color.DimGray,
+                    Margin = new Thickness(0, 0, 0, 0),
+                    Padding = new Thickness(15, 15, 0, 15),
+                    Content = cityLabel
+                };
+                var tapGestureRecognizer = new TapGestureRecognizer();
+                tapGestureRecognizer.Tapped += (_s, _e) => {
+                    chosenCity = cityLabel.Text;
+                    Navigation.PopAsync();
+                };
+                cityFrame.GestureRecognizers.Add(tapGestureRecognizer);
+                chosenCities.Children.Add(cityFrame);
+
+
+                chosenCity = addPage.chosenCity;
+                Navigation.PopAsync();
+            };
+            Navigation.PushAsync(addPage);
         }
     }
 }
+ 

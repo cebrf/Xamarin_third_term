@@ -83,9 +83,14 @@
                        Style="{StaticResource labelResultStyle}" />
                 </StackLayout>
             </ScrollView>
-            
-            <BoxView Color="Bisque"
-                 HeightRequest="400"/>
+
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <BoxView Color="Bisque"
+                             WidthRequest="400"
+                             HeightRequest="500"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ScrollView>
 

@@ -1,0 +1,4277 @@
+[
+   {
+    "id": 1735195,
+    "name": "Sabak Bernam",
+    "country": "MY",
+    "coord": {
+      "lon": 100.9879,
+      "lat": 3.7698
+    }
+  },
+  {
+    "id": 1735199,
+    "name": "Sungai Besar",
+    "country": "MY",
+    "coord": {
+      "lon": 100.986702,
+      "lat": 3.6746
+    }
+  },
+  {
+    "id": 1735274,
+    "name": "Kampar",
+    "country": "MY",
+    "coord": {
+      "lon": 101.150002,
+      "lat": 4.3
+    }
+  },
+  {
+    "id": 6697380,
+    "name": "Putrajaya",
+    "country": "MY",
+    "coord": {
+      "lon": 101.691116,
+      "lat": 2.93527
+    }
+  },
+  {
+    "id": 1088155,
+    "name": "Mutuali",
+    "country": "MZ",
+    "coord": {
+      "lon": 37.00444,
+      "lat": -14.87056
+    }
+  },
+  {
+    "id": 2437798,
+    "name": "Zinder",
+    "country": "NE",
+    "coord": {
+      "lon": 8.9881,
+      "lat": 13.80716
+    }
+  },
+  {
+    "id": 2438774,
+    "name": "Tibiri",
+    "country": "NE",
+    "coord": {
+      "lon": 7.04848,
+      "lat": 13.56271
+    }
+  },
+  {
+    "id": 2440495,
+    "name": "Nguigmi",
+    "country": "NE",
+    "coord": {
+      "lon": 13.10921,
+      "lat": 14.24953
+    }
+  },
+  {
+    "id": 2441217,
+    "name": "Matamey",
+    "country": "NE",
+    "coord": {
+      "lon": 8.47485,
+      "lat": 13.42309
+    }
+  },
+  {
+    "id": 2441482,
+    "name": "Magaria",
+    "country": "NE",
+    "coord": {
+      "lon": 8.90991,
+      "lat": 12.99826
+    }
+  },
+  {
+    "id": 2446267,
+    "name": "Dakoro",
+    "country": "NE",
+    "coord": {
+      "lon": 6.765,
+      "lat": 14.51056
+    }
+  },
+  {
+    "id": 2447938,
+    "name": "Alaghsas",
+    "country": "NE",
+    "coord": {
+      "lon": 8.0168,
+      "lat": 17.0187
+    }
+  },
+  {
+    "id": 2317548,
+    "name": "Zuru",
+    "country": "NG",
+    "coord": {
+      "lon": 5.22879,
+      "lat": 11.42406
+    }
+  },
+  {
+    "id": 2324857,
+    "name": "Pindiga",
+    "country": "NG",
+    "coord": {
+      "lon": 10.93333,
+      "lat": 9.98333
+    }
+  },
+  {
+    "id": 2353099,
+    "name": "Abakaliki",
+    "country": "NG",
+    "coord": {
+      "lon": 8.11691,
+      "lat": 6.31625
+    }
+  },
+  {
+    "id": 2743618,
+    "name": "Gemeente Zundert",
+    "country": "NL",
+    "coord": {
+      "lon": 4.6418,
+      "lat": 51.473518
+    }
+  },
+  {
+    "id": 2743948,
+    "name": "Gemeente Zevenaar",
+    "country": "NL",
+    "coord": {
+      "lon": 6.06667,
+      "lat": 51.916672
+    }
+  },
+  {
+    "id": 2743976,
+    "name": "Gemeente Zeist",
+    "country": "NL",
+    "coord": {
+      "lon": 5.23275,
+      "lat": 52.08847
+    }
+  },
+  {
+    "id": 2743996,
+    "name": "Gemeente Zeewolde",
+    "country": "NL",
+    "coord": {
+      "lon": 5.48333,
+      "lat": 52.333328
+    }
+  },
+  {
+    "id": 2744101,
+    "name": "Gemeente Zaltbommel",
+    "country": "NL",
+    "coord": {
+      "lon": 5.25,
+      "lat": 51.799999
+    }
+  },
+  {
+    "id": 2744609,
+    "name": "Gemeente Weststellingwerf",
+    "country": "NL",
+    "coord": {
+      "lon": 6,
+      "lat": 52.883331
+    }
+  },
+  {
+    "id": 2744247,
+    "name": "Gemeente Woerden",
+    "country": "NL",
+    "coord": {
+      "lon": 4.88333,
+      "lat": 52.083328
+    }
+  },
+  {
+    "id": 6544222,
+    "name": "Oude IJsselstreek",
+    "country": "NL",
+    "coord": {
+      "lon": 6.38078,
+      "lat": 51.899632
+    }
+  },
+  {
+    "id": 2744331,
+    "name": "Gemeente Winterswijk",
+    "country": "NL",
+    "coord": {
+      "lon": 6.71667,
+      "lat": 51.966671
+    }
+  },
+  {
+    "id": 2744513,
+    "name": "Gemeente Wijchen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.71667,
+      "lat": 51.799999
+    }
+  },
+  {
+    "id": 2744548,
+    "name": "Gemeente Wierden",
+    "country": "NL",
+    "coord": {
+      "lon": 6.58333,
+      "lat": 52.349998
+    }
+  },
+  {
+    "id": 2744674,
+    "name": "Gemeente Westervoort",
+    "country": "NL",
+    "coord": {
+      "lon": 5.96667,
+      "lat": 51.950001
+    }
+  },
+  {
+    "id": 2744826,
+    "name": "Gemeente Werkendam",
+    "country": "NL",
+    "coord": {
+      "lon": 4.88333,
+      "lat": 51.799999
+    }
+  },
+  {
+    "id": 2744910,
+    "name": "Gemeente Weert",
+    "country": "NL",
+    "coord": {
+      "lon": 5.7,
+      "lat": 51.25
+    }
+  },
+  {
+    "id": 2744989,
+    "name": "Gemeente Wassenaar",
+    "country": "NL",
+    "coord": {
+      "lon": 4.4,
+      "lat": 52.133331
+    }
+  },
+  {
+    "id": 2745087,
+    "name": "Gemeente Wageningen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.66667,
+      "lat": 51.966671
+    }
+  },
+  {
+    "id": 2745095,
+    "name": "Gemeente Waddinxveen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.65,
+      "lat": 52.033329
+    }
+  },
+  {
+    "id": 2745122,
+    "name": "Gemeente Waalwijk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.01721,
+      "lat": 51.689701
+    }
+  },
+  {
+    "id": 2745126,
+    "name": "Gemeente Waalre",
+    "country": "NL",
+    "coord": {
+      "lon": 5.43333,
+      "lat": 51.383331
+    }
+  },
+  {
+    "id": 2745153,
+    "name": "Gemeente Vught",
+    "country": "NL",
+    "coord": {
+      "lon": 5.28333,
+      "lat": 51.650002
+    }
+  },
+  {
+    "id": 2745295,
+    "name": "Gemeente Voorst",
+    "country": "NL",
+    "coord": {
+      "lon": 6.13333,
+      "lat": 52.166672
+    }
+  },
+  {
+    "id": 2745300,
+    "name": "Gemeente Voorschoten",
+    "country": "NL",
+    "coord": {
+      "lon": 4.43333,
+      "lat": 52.116669
+    }
+  },
+  {
+    "id": 6544293,
+    "name": "Gemeente Teylingen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.50648,
+      "lat": 52.215561
+    }
+  },
+  {
+    "id": 2745579,
+    "name": "Gemeente Vianen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.08333,
+      "lat": 51.98333
+    }
+  },
+  {
+    "id": 2745633,
+    "name": "Gemeente Venray",
+    "country": "NL",
+    "coord": {
+      "lon": 5.96667,
+      "lat": 51.51667
+    }
+  },
+  {
+    "id": 2745704,
+    "name": "Gemeente Veldhoven",
+    "country": "NL",
+    "coord": {
+      "lon": 5.4,
+      "lat": 51.400002
+    }
+  },
+  {
+    "id": 2745725,
+    "name": "Gemeente Veghel",
+    "country": "NL",
+    "coord": {
+      "lon": 5.53333,
+      "lat": 51.599998
+    }
+  },
+  {
+    "id": 2745773,
+    "name": "Gemeente Veenendaal",
+    "country": "NL",
+    "coord": {
+      "lon": 5.55,
+      "lat": 52.01667
+    }
+  },
+  {
+    "id": 2745782,
+    "name": "Gemeente Veendam",
+    "country": "NL",
+    "coord": {
+      "lon": 6.86667,
+      "lat": 53.099998
+    }
+  },
+  {
+    "id": 2745783,
+    "name": "Veendam",
+    "country": "NL",
+    "coord": {
+      "lon": 6.87917,
+      "lat": 53.10667
+    }
+  },
+  {
+    "id": 2746132,
+    "name": "Gemeente Tubbergen",
+    "country": "NL",
+    "coord": {
+      "lon": 6.76667,
+      "lat": 52.400002
+    }
+  },
+  {
+    "id": 2746330,
+    "name": "Gemeente Tiel",
+    "country": "NL",
+    "coord": {
+      "lon": 5.43333,
+      "lat": 51.883331
+    }
+  },
+  {
+    "id": 2746421,
+    "name": "Gemeente Terneuzen",
+    "country": "NL",
+    "coord": {
+      "lon": 3.83922,
+      "lat": 51.280861
+    }
+  },
+  {
+    "id": 6544235,
+    "name": "Gemeente Steenwijkerland",
+    "country": "NL",
+    "coord": {
+      "lon": 6.04028,
+      "lat": 52.755871
+    }
+  },
+  {
+    "id": 2746801,
+    "name": "Gemeente Steenbergen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.32077,
+      "lat": 51.600811
+    }
+  },
+  {
+    "id": 2746859,
+    "name": "Gemeente Stadskanaal",
+    "country": "NL",
+    "coord": {
+      "lon": 6.95,
+      "lat": 52.98333
+    }
+  },
+  {
+    "id": 2747020,
+    "name": "Gemeente Someren",
+    "country": "NL",
+    "coord": {
+      "lon": 5.71049,
+      "lat": 51.382332
+    }
+  },
+  {
+    "id": 2747168,
+    "name": "Gemeente Sliedrecht",
+    "country": "NL",
+    "coord": {
+      "lon": 4.76667,
+      "lat": 51.816669
+    }
+  },
+  {
+    "id": 2747226,
+    "name": "Gemeente Sint-Oedenrode",
+    "country": "NL",
+    "coord": {
+      "lon": 5.45,
+      "lat": 51.549999
+    }
+  },
+  {
+    "id": 2747583,
+    "name": "Gemeente Schijndel",
+    "country": "NL",
+    "coord": {
+      "lon": 5.43333,
+      "lat": 51.616669
+    }
+  },
+  {
+    "id": 2747595,
+    "name": "Gemeente Schiedam",
+    "country": "NL",
+    "coord": {
+      "lon": 4.38333,
+      "lat": 51.916672
+    }
+  },
+  {
+    "id": 2747719,
+    "name": "Gemeente Schagen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.78333,
+      "lat": 52.783329
+    }
+  },
+  {
+    "id": 2747857,
+    "name": "Gemeente Rucphen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.56586,
+      "lat": 51.523571
+    }
+  },
+  {
+    "id": 2747929,
+    "name": "Gemeente Roosendaal",
+    "country": "NL",
+    "coord": {
+      "lon": 4.4226,
+      "lat": 51.51149
+    }
+  },
+  {
+    "id": 2748075,
+    "name": "Gemeente Rijswijk",
+    "country": "NL",
+    "coord": {
+      "lon": 4.31667,
+      "lat": 52.033329
+    }
+  },
+  {
+    "id": 2748171,
+    "name": "Gemeente Ridderkerk",
+    "country": "NL",
+    "coord": {
+      "lon": 4.6,
+      "lat": 51.866669
+    }
+  },
+  {
+    "id": 6544242,
+    "name": "Gemeente Albrandswaard",
+    "country": "NL",
+    "coord": {
+      "lon": 4.40833,
+      "lat": 51.857922
+    }
+  },
+  {
+    "id": 2748184,
+    "name": "Gemeente Rhenen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.57058,
+      "lat": 51.96151
+    }
+  },
+  {
+    "id": 2748391,
+    "name": "Gemeente Putten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.6,
+      "lat": 52.25
+    }
+  },
+  {
+    "id": 6544221,
+    "name": "Gemeente Pijnacker-Nootdorp",
+    "country": "NL",
+    "coord": {
+      "lon": 4.41944,
+      "lat": 52.02615
+    }
+  },
+  {
+    "id": 2749233,
+    "name": "Gemeente Oss",
+    "country": "NL",
+    "coord": {
+      "lon": 5.53333,
+      "lat": 51.75
+    }
+  },
+  {
+    "id": 2749447,
+    "name": "Gemeente Oosterhout",
+    "country": "NL",
+    "coord": {
+      "lon": 4.86791,
+      "lat": 51.639641
+    }
+  },
+  {
+    "id": 2749643,
+    "name": "Gemeente Oldenzaal",
+    "country": "NL",
+    "coord": {
+      "lon": 6.93333,
+      "lat": 52.299999
+    }
+  },
+  {
+    "id": 2749667,
+    "name": "Gemeente Oldebroek",
+    "country": "NL",
+    "coord": {
+      "lon": 5.90086,
+      "lat": 52.445019
+    }
+  },
+  {
+    "id": 2749679,
+    "name": "Gemeente Oisterwijk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.18333,
+      "lat": 51.566669
+    }
+  },
+  {
+    "id": 2749722,
+    "name": "Gemeente Oegstgeest",
+    "country": "NL",
+    "coord": {
+      "lon": 4.46676,
+      "lat": 52.18256
+    }
+  },
+  {
+    "id": 2749752,
+    "name": "Gemeente Nuth",
+    "country": "NL",
+    "coord": {
+      "lon": 5.86667,
+      "lat": 50.916672
+    }
+  },
+  {
+    "id": 2749754,
+    "name": "Gemeente Nunspeet",
+    "country": "NL",
+    "coord": {
+      "lon": 5.76667,
+      "lat": 52.366669
+    }
+  },
+  {
+    "id": 2749779,
+    "name": "Gemeente Nuenen, Gerwen en Nederwetten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.53333,
+      "lat": 51.466671
+    }
+  },
+  {
+    "id": 2750064,
+    "name": "Gemeente Nijkerk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.483,
+      "lat": 52.216999
+    }
+  },
+  {
+    "id": 2750466,
+    "name": "Gemeente Nederweert",
+    "country": "NL",
+    "coord": {
+      "lon": 5.73333,
+      "lat": 51.283329
+    }
+  },
+  {
+    "id": 2750520,
+    "name": "Gemeente Naarden",
+    "country": "NL",
+    "coord": {
+      "lon": 5.15,
+      "lat": 52.283329
+    }
+  },
+  {
+    "id": 6544250,
+    "name": "Gemeente De Ronde Venen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.90123,
+      "lat": 52.215149
+    }
+  },
+  {
+    "id": 2750883,
+    "name": "Gemeente Middelharnis",
+    "country": "NL",
+    "coord": {
+      "lon": 4.15,
+      "lat": 51.75
+    }
+  },
+  {
+    "id": 2751036,
+    "name": "Gemeente Meerssen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.75,
+      "lat": 50.883331
+    }
+  },
+  {
+    "id": 2751455,
+    "name": "Gemeente Loon op Zand",
+    "country": "NL",
+    "coord": {
+      "lon": 5.05043,
+      "lat": 51.638779
+    }
+  },
+  {
+    "id": 2750450,
+    "name": "Neerbosch West",
+    "country": "NL",
+    "coord": {
+      "lon": 5.8,
+      "lat": 51.833328
+    }
+  },
+  {
+    "id": 2751651,
+    "name": "Lichtenvoorde",
+    "country": "NL",
+    "coord": {
+      "lon": 6.56667,
+      "lat": 51.986671
+    }
+  },
+  {
+    "id": 2751770,
+    "name": "Gemeente Leiderdorp",
+    "country": "NL",
+    "coord": {
+      "lon": 4.54318,
+      "lat": 52.15707
+    }
+  },
+  {
+    "id": 2751807,
+    "name": "Gemeente Leerdam",
+    "country": "NL",
+    "coord": {
+      "lon": 5.08333,
+      "lat": 51.883331
+    }
+  },
+  {
+    "id": 2751833,
+    "name": "Gemeente Leek",
+    "country": "NL",
+    "coord": {
+      "lon": 6.3771,
+      "lat": 53.155609
+    }
+  },
+  {
+    "id": 2752263,
+    "name": "Gemeente Krimpen aan den IJssel",
+    "country": "NL",
+    "coord": {
+      "lon": 4.58819,
+      "lat": 51.914581
+    }
+  },
+  {
+    "id": 2749931,
+    "name": "Noorderhoogebrug",
+    "country": "NL",
+    "coord": {
+      "lon": 6.56806,
+      "lat": 53.245831
+    }
+  },
+  {
+    "id": 2752420,
+    "name": "Korrewegwijk",
+    "country": "NL",
+    "coord": {
+      "lon": 6.56804,
+      "lat": 53.232349
+    }
+  },
+  {
+    "id": 2753354,
+    "name": "Gemeente IJsselstein",
+    "country": "NL",
+    "coord": {
+      "lon": 5.03333,
+      "lat": 52.01667
+    }
+  },
+  {
+    "id": 2753556,
+    "name": "Gemeente Houten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.16941,
+      "lat": 52.026829
+    }
+  },
+  {
+    "id": 2753635,
+    "name": "Gemeente Hoorn",
+    "country": "NL",
+    "coord": {
+      "lon": 5.05779,
+      "lat": 52.64312
+    }
+  },
+  {
+    "id": 2753705,
+    "name": "Gemeente Hoogezand-Sappemeer",
+    "country": "NL",
+    "coord": {
+      "lon": 6.75,
+      "lat": 53.150002
+    }
+  },
+  {
+    "id": 2753706,
+    "name": "Hoogezand",
+    "country": "NL",
+    "coord": {
+      "lon": 6.76111,
+      "lat": 53.161671
+    }
+  },
+  {
+    "id": 2754065,
+    "name": "Gemeente Hilvarenbeek",
+    "country": "NL",
+    "coord": {
+      "lon": 5.13333,
+      "lat": 51.48333
+    }
+  },
+  {
+    "id": 2754072,
+    "name": "Gemeente Hillegom",
+    "country": "NL",
+    "coord": {
+      "lon": 4.58333,
+      "lat": 52.283329
+    }
+  },
+  {
+    "id": 2754407,
+    "name": "Gemeente Hendrik-Ido-Ambacht",
+    "country": "NL",
+    "coord": {
+      "lon": 4.63333,
+      "lat": 51.833328
+    }
+  },
+  {
+    "id": 2754453,
+    "name": "Gemeente Hellevoetsluis",
+    "country": "NL",
+    "coord": {
+      "lon": 4.13333,
+      "lat": 51.833328
+    }
+  },
+  {
+    "id": 2754515,
+    "name": "Gemeente Heiloo",
+    "country": "NL",
+    "coord": {
+      "lon": 4.7,
+      "lat": 52.599998
+    }
+  },
+  {
+    "id": 6544268,
+    "name": "Gemeente Bernheze",
+    "country": "NL",
+    "coord": {
+      "lon": 5.52378,
+      "lat": 51.685558
+    }
+  },
+  {
+    "id": 2754680,
+    "name": "Gemeente Heerde",
+    "country": "NL",
+    "coord": {
+      "lon": 6.03889,
+      "lat": 52.388329
+    }
+  },
+  {
+    "id": 2754681,
+    "name": "Heerde",
+    "country": "NL",
+    "coord": {
+      "lon": 6.04016,
+      "lat": 52.38723
+    }
+  },
+  {
+    "id": 2754816,
+    "name": "Gemeente Harlingen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.41806,
+      "lat": 53.175251
+    }
+  },
+  {
+    "id": 2754836,
+    "name": "Gemeente Harenkarspel",
+    "country": "NL",
+    "coord": {
+      "lon": 4.76667,
+      "lat": 52.75
+    }
+  },
+  {
+    "id": 2754840,
+    "name": "Gemeente Haren",
+    "country": "NL",
+    "coord": {
+      "lon": 6.6,
+      "lat": 53.166672
+    }
+  },
+  {
+    "id": 2754846,
+    "name": "Gemeente Harderwijk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.61667,
+      "lat": 52.333328
+    }
+  },
+  {
+    "id": 2755270,
+    "name": "Gemeente Groesbeek",
+    "country": "NL",
+    "coord": {
+      "lon": 5.91667,
+      "lat": 51.76667
+    }
+  },
+  {
+    "id": 2755463,
+    "name": "Gemeente Goirle",
+    "country": "NL",
+    "coord": {
+      "lon": 5.05,
+      "lat": 51.51667
+    }
+  },
+  {
+    "id": 2755475,
+    "name": "Gemeente Goes",
+    "country": "NL",
+    "coord": {
+      "lon": 3.84082,
+      "lat": 51.51263
+    }
+  },
+  {
+    "id": 2755599,
+    "name": "Gendringen",
+    "country": "NL",
+    "coord": {
+      "lon": 6.37639,
+      "lat": 51.873329
+    }
+  },
+  {
+    "id": 2755668,
+    "name": "Gemeente Geertruidenberg",
+    "country": "NL",
+    "coord": {
+      "lon": 4.88042,
+      "lat": 51.69445
+    }
+  },
+  {
+    "id": 2756058,
+    "name": "Gemeente Epe",
+    "country": "NL",
+    "coord": {
+      "lon": 5.98333,
+      "lat": 52.333328
+    }
+  },
+  {
+    "id": 2756076,
+    "name": "Gemeente Enkhuizen",
+    "country": "NL",
+    "coord": {
+      "lon": 5.28333,
+      "lat": 52.700001
+    }
+  },
+  {
+    "id": 6544276,
+    "name": "Gemeente Overbetuwe",
+    "country": "NL",
+    "coord": {
+      "lon": 5.78686,
+      "lat": 51.91843
+    }
+  },
+  {
+    "id": 2756506,
+    "name": "Gemeente Duiven",
+    "country": "NL",
+    "coord": {
+      "lon": 6.01667,
+      "lat": 51.933331
+    }
+  },
+  {
+    "id": 2756538,
+    "name": "Gemeente Druten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.6,
+      "lat": 51.883331
+    }
+  },
+  {
+    "id": 2756558,
+    "name": "Gemeente Dronten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.71667,
+      "lat": 52.5
+    }
+  },
+  {
+    "id": 2756722,
+    "name": "Gemeente Dongen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.95334,
+      "lat": 51.63533
+    }
+  },
+  {
+    "id": 2756766,
+    "name": "Gemeente Doetinchem",
+    "country": "NL",
+    "coord": {
+      "lon": 6.28333,
+      "lat": 51.950001
+    }
+  },
+  {
+    "id": 2756887,
+    "name": "Gemeente Diemen",
+    "country": "NL",
+    "coord": {
+      "lon": 4.96805,
+      "lat": 52.341629
+    }
+  },
+  {
+    "id": 2754552,
+    "name": "Heijplaat",
+    "country": "NL",
+    "coord": {
+      "lon": 4.42083,
+      "lat": 51.89333
+    }
+  },
+  {
+    "id": 2757782,
+    "name": "Gemeente De Bilt",
+    "country": "NL",
+    "coord": {
+      "lon": 5.2,
+      "lat": 52.133331
+    }
+  },
+  {
+    "id": 2757849,
+    "name": "Gemeente Dalfsen",
+    "country": "NL",
+    "coord": {
+      "lon": 6.25,
+      "lat": 52.5
+    }
+  },
+  {
+    "id": 2757873,
+    "name": "Gemeente Cuijk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.86667,
+      "lat": 51.716671
+    }
+  },
+  {
+    "id": 2758011,
+    "name": "Gemeente Capelle aan den IJssel",
+    "country": "NL",
+    "coord": {
+      "lon": 4.57819,
+      "lat": 51.935669
+    }
+  },
+  {
+    "id": 2758063,
+    "name": "Gemeente Bussum",
+    "country": "NL",
+    "coord": {
+      "lon": 5.16667,
+      "lat": 52.26667
+    }
+  },
+  {
+    "id": 2758103,
+    "name": "Gemeente Bunschoten",
+    "country": "NL",
+    "coord": {
+      "lon": 5.36667,
+      "lat": 52.23333
+    }
+  },
+  {
+    "id": 2758173,
+    "name": "Gemeente Brunssum",
+    "country": "NL",
+    "coord": {
+      "lon": 5.95,
+      "lat": 50.933331
+    }
+  },
+  {
+    "id": 2758176,
+    "name": "Gemeente Brummen",
+    "country": "NL",
+    "coord": {
+      "lon": 6.15,
+      "lat": 52.083328
+    }
+  },
+  {
+    "id": 2758257,
+    "name": "Gemeente Waterland",
+    "country": "NL",
+    "coord": {
+      "lon": 5.01371,
+      "lat": 52.437599
+    }
+  },
+  {
+    "id": 2758459,
+    "name": "Gemeente Boxtel",
+    "country": "NL",
+    "coord": {
+      "lon": 5.31667,
+      "lat": 51.583328
+    }
+  },
+  {
+    "id": 2758546,
+    "name": "Gemeente Boskoop",
+    "country": "NL",
+    "coord": {
+      "lon": 4.65,
+      "lat": 52.066669
+    }
+  },
+  {
+    "id": 2758588,
+    "name": "Gemeente Borsele",
+    "country": "NL",
+    "coord": {
+      "lon": 3.81127,
+      "lat": 51.44191
+    }
+  },
+  {
+    "id": 2758597,
+    "name": "Gemeente Borne",
+    "country": "NL",
+    "coord": {
+      "lon": 6.75,
+      "lat": 52.299999
+    }
+  },
+  {
+    "id": 2758802,
+    "name": "Gemeente Bloemendaal",
+    "country": "NL",
+    "coord": {
+      "lon": 4.61667,
+      "lat": 52.400002
+    }
+  },
+  {
+    "id": 2758997,
+    "name": "Gemeente Beverwijk",
+    "country": "NL",
+    "coord": {
+      "lon": 4.65468,
+      "lat": 52.482731
+    }
+  },
+  {
+    "id": 2759039,
+    "name": "Gemeente Best",
+    "country": "NL",
+    "coord": {
+      "lon": 5.38333,
+      "lat": 51.5
+    }
+  },
+  {
+    "id": 2759131,
+    "name": "Gemeente Bergeijk",
+    "country": "NL",
+    "coord": {
+      "lon": 5.35,
+      "lat": 51.316669
+    }
+  },
+  {
+    "id": 2759144,
+    "name": "Gemeente Bergen op Zoom",
+    "country": "NL",
+    "coord": {
+      "lon": 4.29164,
+      "lat": 51.506962
+    }
+  },
+  {
+    "id": 2759406,
+    "name": "Gemeente Barneveld",
+    "country": "NL",
+    "coord": {
+      "lon": 5.58333,
+      "lat": 52.133331
+    }
+  },
+  {
+    "id": 2759425,
+    "name": "Gemeente Barendrecht",
+    "country": "NL",
+    "coord": {
+      "lon": 4.53333,
+      "lat": 51.849998
+    }
+  },
+  {
+    "id": 2759543,
+    "name": "Gemeente Baarn",
+    "country": "NL",
+    "coord": {
+      "lon": 5.28333,
+      "lat": 52.200001
+    }
+  },
+  {
+    "id": 6544296,
+    "name": "Gemeente Aa en Hunze",
+    "country": "NL",
+    "coord": {
+      "lon": 6.74908,
+      "lat": 53.004452
+    }
+  },
+  {
+    "id": 2759746,
+    "name": "Anloo",
+    "country": "NL",
+    "coord": {
+      "lon": 6.70139,
+      "lat": 53.04417
+    }
+  },
+  {
+    "id": 2759886,
+    "name": "Gemeente Almelo",
+    "country": "NL",
+    "coord": {
+      "lon": 6.63333,
+      "lat": 52.333328
+    }
+  },
+  {
+    "id": 2759914,
+    "name": "Gemeente Alblasserdam",
+    "country": "NL",
+    "coord": {
+      "lon": 4.66321,
+      "lat": 51.859852
+    }
+  },
+  {
+    "id": 2760122,
+    "name": "Gemeente Aalten",
+    "country": "NL",
+    "coord": {
+      "lon": 6.58333,
+      "lat": 51.916672
+    }
+  },
+  {
+    "id": 2760133,
+    "name": "Gemeente Aalsmeer",
+    "country": "NL",
+    "coord": {
+      "lon": 4.76532,
+      "lat": 52.264061
+    }
+  },
+  {
+    "id": 3136944,
+    "name": "Steinkjer",
+    "country": "NO",
+    "coord": {
+      "lon": 11.38505,
+      "lat": 64.193031
+    }
+  },
+  {
+    "id": 3136947,
+    "name": "Steinkjer",
+    "country": "NO",
+    "coord": {
+      "lon": 11.49537,
+      "lat": 64.01487
+    }
+  },
+  {
+    "id": 6453388,
+    "name": "Sarpsborg",
+    "country": "NO",
+    "coord": {
+      "lon": 11.11167,
+      "lat": 59.281479
+    }
+  },
+  {
+    "id": 3142657,
+    "name": "Porsgrunn",
+    "country": "NO",
+    "coord": {
+      "lon": 9.6561,
+      "lat": 59.140541
+    }
+  },
+  {
+    "id": 3145614,
+    "name": "Mo i Rana",
+    "country": "NO",
+    "coord": {
+      "lon": 14.14278,
+      "lat": 66.312782
+    }
+  },
+  {
+    "id": 6453373,
+    "name": "Kongsberg",
+    "country": "NO",
+    "coord": {
+      "lon": 9.64653,
+      "lat": 59.665161
+    }
+  },
+  {
+    "id": 6453351,
+    "name": "Hamar",
+    "country": "NO",
+    "coord": {
+      "lon": 11.0783,
+      "lat": 60.79451
+    }
+  },
+  {
+    "id": 3154209,
+    "name": "Halden",
+    "country": "NO",
+    "coord": {
+      "lon": 11.38754,
+      "lat": 59.124779
+    }
+  },
+  {
+    "id": 3155573,
+    "name": "Gjovik",
+    "country": "NO",
+    "coord": {
+      "lon": 10.69155,
+      "lat": 60.795738
+    }
+  },
+  {
+    "id": 6697345,
+    "name": "Sandsli",
+    "country": "NO",
+    "coord": {
+      "lon": 5.28554,
+      "lat": 60.30323
+    }
+  },
+  {
+    "id": 6697344,
+    "name": "Ytrebygda",
+    "country": "NO",
+    "coord": {
+      "lon": 5.28236,
+      "lat": 60.305038
+    }
+  },
+  {
+    "id": 1282616,
+    "name": "Waling",
+    "country": "NP",
+    "coord": {
+      "lon": 83.76667,
+      "lat": 27.98333
+    }
+  },
+  {
+    "id": 1282666,
+    "name": "Tikapur",
+    "country": "NP",
+    "coord": {
+      "lon": 81.133331,
+      "lat": 28.5
+    }
+  },
+  {
+    "id": 1282714,
+    "name": "Tansen",
+    "country": "NP",
+    "coord": {
+      "lon": 83.5467,
+      "lat": 27.86731
+    }
+  },
+  {
+    "id": 1282770,
+    "name": "Siraha",
+    "country": "NP",
+    "coord": {
+      "lon": 86.208702,
+      "lat": 26.65411
+    }
+  },
+  {
+    "id": 1282884,
+    "name": "Rajbiraj",
+    "country": "NP",
+    "coord": {
+      "lon": 86.75,
+      "lat": 26.533331
+    }
+  },
+  {
+    "id": 1282950,
+    "name": "Panaoti",
+    "country": "NP",
+    "coord": {
+      "lon": 85.512398,
+      "lat": 27.581381
+    }
+  },
+  {
+    "id": 1283082,
+    "name": "Malangwa",
+    "country": "NP",
+    "coord": {
+      "lon": 85.558113,
+      "lat": 26.856791
+    }
+  },
+  {
+    "id": 1283095,
+    "name": "Mahendranagar",
+    "country": "NP",
+    "coord": {
+      "lon": 80.333328,
+      "lat": 28.91667
+    }
+  },
+  {
+    "id": 1283161,
+    "name": "Lahan",
+    "country": "NP",
+    "coord": {
+      "lon": 86.495148,
+      "lat": 26.72958
+    }
+  },
+  {
+    "id": 1283217,
+    "name": "Khandbari",
+    "country": "NP",
+    "coord": {
+      "lon": 87.203903,
+      "lat": 27.374689
+    }
+  },
+  {
+    "id": 1283318,
+    "name": "Janakpur",
+    "country": "NP",
+    "coord": {
+      "lon": 85.906464,
+      "lat": 26.718281
+    }
+  },
+  {
+    "id": 1283323,
+    "name": "Jaleswar",
+    "country": "NP",
+    "coord": {
+      "lon": 85.800812,
+      "lat": 26.64711
+    }
+  },
+  {
+    "id": 1283329,
+    "name": "Ithari",
+    "country": "NP",
+    "coord": {
+      "lon": 87.283333,
+      "lat": 26.66667
+    }
+  },
+  {
+    "id": 1283334,
+    "name": "Ilām",
+    "country": "NP",
+    "coord": {
+      "lon": 87.916672,
+      "lat": 26.91667
+    }
+  },
+  {
+    "id": 1283333,
+    "name": "Ilam",
+    "country": "NP",
+    "coord": {
+      "lon": 87.928238,
+      "lat": 26.90943
+    }
+  },
+  {
+    "id": 1283339,
+    "name": "Hitura",
+    "country": "NP",
+    "coord": {
+      "lon": 85.032188,
+      "lat": 27.428391
+    }
+  },
+  {
+    "id": 1283368,
+    "name": "Gulariya",
+    "country": "NP",
+    "coord": {
+      "lon": 81.333328,
+      "lat": 28.23333
+    }
+  },
+  {
+    "id": 1283401,
+    "name": "Gaur",
+    "country": "NP",
+    "coord": {
+      "lon": 85.26667,
+      "lat": 26.76667
+    }
+  },
+  {
+    "id": 1283460,
+    "name": "Dharan Bazar",
+    "country": "NP",
+    "coord": {
+      "lon": 87.283546,
+      "lat": 26.812481
+    }
+  },
+  {
+    "id": 1283465,
+    "name": "Dhankuta",
+    "country": "NP",
+    "coord": {
+      "lon": 87.333328,
+      "lat": 26.98333
+    }
+  },
+  {
+    "id": 1283467,
+    "name": "Dhangarhi",
+    "country": "NP",
+    "coord": {
+      "lon": 80.596107,
+      "lat": 28.70792
+    }
+  },
+  {
+    "id": 1283484,
+    "name": "Darchula",
+    "country": "NP",
+    "coord": {
+      "lon": 80.52874,
+      "lat": 29.841209
+    }
+  },
+  {
+    "id": 1283497,
+    "name": "Dailekh",
+    "country": "NP",
+    "coord": {
+      "lon": 81.666672,
+      "lat": 28.83333
+    }
+  },
+  {
+    "id": 1283496,
+    "name": "Dailekh",
+    "country": "NP",
+    "coord": {
+      "lon": 81.710114,
+      "lat": 28.844339
+    }
+  },
+  {
+    "id": 1283499,
+    "name": "Dadeldhura",
+    "country": "NP",
+    "coord": {
+      "lon": 80.580589,
+      "lat": 29.29842
+    }
+  },
+  {
+    "id": 1283562,
+    "name": "Butwal",
+    "country": "NP",
+    "coord": {
+      "lon": 83.448357,
+      "lat": 27.70055
+    }
+  },
+  {
+    "id": 1283581,
+    "name": "Birganj",
+    "country": "NP",
+    "coord": {
+      "lon": 84.87735,
+      "lat": 27.010429
+    }
+  },
+  {
+    "id": 1283628,
+    "name": "Bhadrapur",
+    "country": "NP",
+    "coord": {
+      "lon": 88.09436,
+      "lat": 26.544041
+    }
+  },
+  {
+    "id": 1283679,
+    "name": "Banepa",
+    "country": "NP",
+    "coord": {
+      "lon": 85.521378,
+      "lat": 27.629789
+    }
+  },
+  {
+    "id": 1283711,
+    "name": "Baglung",
+    "country": "NP",
+    "coord": {
+      "lon": 83.58976,
+      "lat": 28.271891
+    }
+  },
+  {
+    "id": 6254843,
+    "name": "Birendranagar",
+    "country": "NP",
+    "coord": {
+      "lon": 81.633888,
+      "lat": 28.60194
+    }
+  },
+  {
+    "id": 2186313,
+    "name": "Napier",
+    "country": "NZ",
+    "coord": {
+      "lon": 176.916672,
+      "lat": -39.48333
+    }
+  },
+  {
+    "id": 2187404,
+    "name": "Manukau City",
+    "country": "NZ",
+    "coord": {
+      "lon": 174.879868,
+      "lat": -36.992821
+    }
+  },
+  {
+    "id": 2190224,
+    "name": "Hastings",
+    "country": "NZ",
+    "coord": {
+      "lon": 176.849182,
+      "lat": -39.6381
+    }
+  },
+  {
+    "id": 2208329,
+    "name": "Papakura",
+    "country": "NZ",
+    "coord": {
+      "lon": 174.943924,
+      "lat": -37.06572
+    }
+  },
+  {
+    "id": 2208330,
+    "name": "Whakatane",
+    "country": "NZ",
+    "coord": {
+      "lon": 176.985443,
+      "lat": -37.958549
+    }
+  },
+  {
+    "id": 6243926,
+    "name": "Blenheim",
+    "country": "NZ",
+    "coord": {
+      "lon": 173.952805,
+      "lat": -41.516029
+    }
+  },
+  {
+    "id": 6244895,
+    "name": "Upper Hutt",
+    "country": "NZ",
+    "coord": {
+      "lon": 175.050201,
+      "lat": -41.138271
+    }
+  },
+  {
+    "id": 7302484,
+    "name": "Waitakere",
+    "country": "NZ",
+    "coord": {
+      "lon": 174.65773,
+      "lat": -36.917542
+    }
+  },
+  {
+    "id": 286245,
+    "name": "Sur",
+    "country": "OM",
+    "coord": {
+      "lon": 59.528889,
+      "lat": 22.566669
+    }
+  },
+  {
+    "id": 286293,
+    "name": "Sufalat Samail",
+    "country": "OM",
+    "coord": {
+      "lon": 58.01667,
+      "lat": 23.316669
+    }
+  },
+  {
+    "id": 286402,
+    "name": "Shinas",
+    "country": "OM",
+    "coord": {
+      "lon": 56.465832,
+      "lat": 24.74333
+    }
+  },
+  {
+    "id": 287814,
+    "name": "Izki",
+    "country": "OM",
+    "coord": {
+      "lon": 57.76667,
+      "lat": 22.933331
+    }
+  },
+  {
+    "id": 287830,
+    "name": "Ibri",
+    "country": "OM",
+    "coord": {
+      "lon": 56.51572,
+      "lat": 23.225731
+    }
+  },
+  {
+    "id": 288789,
+    "name": "Barka",
+    "country": "OM",
+    "coord": {
+      "lon": 57.88908,
+      "lat": 23.70739
+    }
+  },
+  {
+    "id": 288899,
+    "name": "Bahla",
+    "country": "OM",
+    "coord": {
+      "lon": 57.29958,
+      "lat": 22.973391
+    }
+  },
+  {
+    "id": 288967,
+    "name": "As Sib al Jadidah",
+    "country": "OM",
+    "coord": {
+      "lon": 58.18911,
+      "lat": 23.670271
+    }
+  },
+  {
+    "id": 289011,
+    "name": "Ar Rustaq",
+    "country": "OM",
+    "coord": {
+      "lon": 57.424438,
+      "lat": 23.390829
+    }
+  },
+  {
+    "id": 289174,
+    "name": "Al Liwa",
+    "country": "OM",
+    "coord": {
+      "lon": 56.565559,
+      "lat": 24.53611
+    }
+  },
+  {
+    "id": 289199,
+    "name": "Al Khaburah",
+    "country": "OM",
+    "coord": {
+      "lon": 57.098381,
+      "lat": 23.98864
+    }
+  },
+  {
+    "id": 289317,
+    "name": "Al Buraymi",
+    "country": "OM",
+    "coord": {
+      "lon": 55.793121,
+      "lat": 24.250879
+    }
+  },
+  {
+    "id": 411849,
+    "name": "Yanqul",
+    "country": "OM",
+    "coord": {
+      "lon": 56.550079,
+      "lat": 23.590509
+    }
+  },
+  {
+    "id": 3700038,
+    "name": "Vista Alegre",
+    "country": "PA",
+    "coord": {
+      "lon": -79.699997,
+      "lat": 8.93333
+    }
+  },
+  {
+    "id": 3700164,
+    "name": "Veracruz",
+    "country": "PA",
+    "coord": {
+      "lon": -79.633331,
+      "lat": 8.88333
+    }
+  },
+  {
+    "id": 3701329,
+    "name": "San Miguelito",
+    "country": "PA",
+    "coord": {
+      "lon": -79.5,
+      "lat": 9.03333
+    }
+  },
+  {
+    "id": 3702431,
+    "name": "Puerto Armuelles",
+    "country": "PA",
+    "coord": {
+      "lon": -82.866669,
+      "lat": 8.28333
+    }
+  },
+  {
+    "id": 3703229,
+    "name": "Pedregal",
+    "country": "PA",
+    "coord": {
+      "lon": -82.433327,
+      "lat": 8.36667
+    }
+  },
+  {
+    "id": 3703647,
+    "name": "Pacora",
+    "country": "PA",
+    "coord": {
+      "lon": -79.283333,
+      "lat": 9.08333
+    }
+  },
+  {
+    "id": 3703833,
+    "name": "Nuevo Arraijan",
+    "country": "PA",
+    "coord": {
+      "lon": -79.716667,
+      "lat": 8.91667
+    }
+  },
+  {
+    "id": 3706567,
+    "name": "Las Cumbres",
+    "country": "PA",
+    "coord": {
+      "lon": -79.533333,
+      "lat": 9.08333
+    }
+  },
+  {
+    "id": 3707899,
+    "name": "La Concepcion",
+    "country": "PA",
+    "coord": {
+      "lon": -82.616669,
+      "lat": 8.51667
+    }
+  },
+  {
+    "id": 3707961,
+    "name": "La Chorrera",
+    "country": "PA",
+    "coord": {
+      "lon": -79.783333,
+      "lat": 8.88028
+    }
+  },
+  {
+    "id": 3708066,
+    "name": "La Cabima",
+    "country": "PA",
+    "coord": {
+      "lon": -79.533333,
+      "lat": 9.13333
+    }
+  },
+  {
+    "id": 3712455,
+    "name": "Chilibre",
+    "country": "PA",
+    "coord": {
+      "lon": -79.616669,
+      "lat": 9.15
+    }
+  },
+  {
+    "id": 3712505,
+    "name": "Chepo",
+    "country": "PA",
+    "coord": {
+      "lon": -79.099998,
+      "lat": 9.16667
+    }
+  },
+  {
+    "id": 3712560,
+    "name": "Changuinola",
+    "country": "PA",
+    "coord": {
+      "lon": -82.51667,
+      "lat": 9.43333
+    }
+  },
+  {
+    "id": 3712884,
+    "name": "Cativa",
+    "country": "PA",
+    "coord": {
+      "lon": -79.843613,
+      "lat": 9.36056
+    }
+  },
+  {
+    "id": 3714932,
+    "name": "Alcaldediaz",
+    "country": "PA",
+    "coord": {
+      "lon": -79.550003,
+      "lat": 9.11667
+    }
+  },
+  {
+    "id": 3690875,
+    "name": "Viru",
+    "country": "PE",
+    "coord": {
+      "lon": -78.75,
+      "lat": -8.41667
+    }
+  },
+  {
+    "id": 3691324,
+    "name": "Tocache Nuevo",
+    "country": "PE",
+    "coord": {
+      "lon": -76.512497,
+      "lat": -8.18417
+    }
+  },
+  {
+    "id": 3692073,
+    "name": "Santiago de Cao",
+    "country": "PE",
+    "coord": {
+      "lon": -79.239166,
+      "lat": -7.95889
+    }
+  },
+  {
+    "id": 3693584,
+    "name": "Pimentel",
+    "country": "PE",
+    "coord": {
+      "lon": -79.934174,
+      "lat": -6.83667
+    }
+  },
+  {
+    "id": 3695466,
+    "name": "La Union",
+    "country": "PE",
+    "coord": {
+      "lon": -80.75,
+      "lat": -5.4
+    }
+  },
+  {
+    "id": 3695675,
+    "name": "La Peca",
+    "country": "PE",
+    "coord": {
+      "lon": -78.434998,
+      "lat": -5.61111
+    }
+  },
+  {
+    "id": 3698194,
+    "name": "Chocope",
+    "country": "PE",
+    "coord": {
+      "lon": -79.221672,
+      "lat": -7.79139
+    }
+  },
+  {
+    "id": 3925863,
+    "name": "Yanacancha",
+    "country": "PE",
+    "coord": {
+      "lon": -76.645561,
+      "lat": -10.24111
+    }
+  },
+  {
+    "id": 3928679,
+    "name": "Sicuani",
+    "country": "PE",
+    "coord": {
+      "lon": -71.226112,
+      "lat": -14.26944
+    }
+  },
+  {
+    "id": 3929295,
+    "name": "Santa Ana",
+    "country": "PE",
+    "coord": {
+      "lon": -72.716667,
+      "lat": -12.86667
+    }
+  },
+  {
+    "id": 3935288,
+    "name": "Minas de Marcona",
+    "country": "PE",
+    "coord": {
+      "lon": -75.110283,
+      "lat": -15.21194
+    }
+  },
+  {
+    "id": 3939761,
+    "name": "Hualmay",
+    "country": "PE",
+    "coord": {
+      "lon": -77.613892,
+      "lat": -11.09639
+    }
+  },
+  {
+    "id": 3944179,
+    "name": "Chaupimarca",
+    "country": "PE",
+    "coord": {
+      "lon": -76.533333,
+      "lat": -10.43333
+    }
+  },
+  {
+    "id": 1679678,
+    "name": "Wao",
+    "country": "PH",
+    "coord": {
+      "lon": 124.666672,
+      "lat": 7.68333
+    }
+  },
+  {
+    "id": 1679804,
+    "name": "Virac",
+    "country": "PH",
+    "coord": {
+      "lon": 124.216667,
+      "lat": 13.63333
+    }
+  },
+  {
+    "id": 1680027,
+    "name": "Victoria",
+    "country": "PH",
+    "coord": {
+      "lon": 121.316673,
+      "lat": 14.21667
+    }
+  },
+  {
+    "id": 1680199,
+    "name": "Urdaneta",
+    "country": "PH",
+    "coord": {
+      "lon": 120.550003,
+      "lat": 15.98333
+    }
+  },
+  {
+    "id": 1680614,
+    "name": "Tupi",
+    "country": "PH",
+    "coord": {
+      "lon": 124.949997,
+      "lat": 6.31667
+    }
+  },
+  {
+    "id": 1684577,
+    "name": "Tagas",
+    "country": "PH",
+    "coord": {
+      "lon": 123.716667,
+      "lat": 13.16667
+    }
+  },
+  {
+    "id": 1699927,
+    "name": "Maytubig",
+    "country": "PH",
+    "coord": {
+      "lon": 120.983299,
+      "lat": 14.5667
+    }
+  },
+  {
+    "id": 1696043,
+    "name": "Palo",
+    "country": "PH",
+    "coord": {
+      "lon": 124.966667,
+      "lat": 11.13333
+    }
+  },
+  {
+    "id": 1697377,
+    "name": "Obando",
+    "country": "PH",
+    "coord": {
+      "lon": 120.933327,
+      "lat": 14.71667
+    }
+  },
+  {
+    "id": 1698104,
+    "name": "Narra",
+    "country": "PH",
+    "coord": {
+      "lon": 118.400002,
+      "lat": 9.31667
+    }
+  },
+  {
+    "id": 1701946,
+    "name": "Mandaue City",
+    "country": "PH",
+    "coord": {
+      "lon": 123.933327,
+      "lat": 10.33333
+    }
+  },
+  {
+    "id": 1704764,
+    "name": "Maasin",
+    "country": "PH",
+    "coord": {
+      "lon": 124.849998,
+      "lat": 10.2
+    }
+  },
+  {
+    "id": 1706362,
+    "name": "Limay",
+    "country": "PH",
+    "coord": {
+      "lon": 120.550003,
+      "lat": 14.53333
+    }
+  },
+  {
+    "id": 1707346,
+    "name": "La Paz",
+    "country": "PH",
+    "coord": {
+      "lon": 120.716667,
+      "lat": 15.43333
+    }
+  },
+  {
+    "id": 1715538,
+    "name": "Dapitan City",
+    "country": "PH",
+    "coord": {
+      "lon": 123.416672,
+      "lat": 8.65
+    }
+  },
+  {
+    "id": 1722268,
+    "name": "Bustos",
+    "country": "PH",
+    "coord": {
+      "lon": 120.933327,
+      "lat": 14.93333
+    }
+  },
+  {
+    "id": 1725731,
+    "name": "Bayombong",
+    "country": "PH",
+    "coord": {
+      "lon": 121.133331,
+      "lat": 16.48333
+    }
+  },
+  {
+    "id": 1729525,
+    "name": "Bacoor",
+    "country": "PH",
+    "coord": {
+      "lon": 120.949997,
+      "lat": 14.41667
+    }
+  },
+  {
+    "id": 1167031,
+    "name": "Ratodero",
+    "country": "PK",
+    "coord": {
+      "lon": 68.287079,
+      "lat": 27.802959
+    }
+  },
+  {
+    "id": 1169620,
+    "name": "Mustafabad",
+    "country": "PK",
+    "coord": {
+      "lon": 73.498894,
+      "lat": 30.89222
+    }
+  },
+  {
+    "id": 1174984,
+    "name": "Kanganpur",
+    "country": "PK",
+    "coord": {
+      "lon": 74.123108,
+      "lat": 30.766291
+    }
+  },
+  {
+    "id": 1175021,
+    "name": "Kandhkot",
+    "country": "PK",
+    "coord": {
+      "lon": 69.18235,
+      "lat": 28.243959
+    }
+  },
+  {
+    "id": 1176800,
+    "name": "Hujra",
+    "country": "PK",
+    "coord": {
+      "lon": 73.823578,
+      "lat": 30.741791
+    }
+  },
+  {
+    "id": 1176889,
+    "name": "Hingorja",
+    "country": "PK",
+    "coord": {
+      "lon": 68.415977,
+      "lat": 27.21088
+    }
+  },
+  {
+    "id": 1178560,
+    "name": "Ghauspur",
+    "country": "PK",
+    "coord": {
+      "lon": 69.083054,
+      "lat": 28.139059
+    }
+  },
+  {
+    "id": 1332083,
+    "name": "Bahawalnagar",
+    "country": "PK",
+    "coord": {
+      "lon": 73.390831,
+      "lat": 30.550831
+    }
+  },
+  {
+    "id": 7530730,
+    "name": "Zamość",
+    "country": "PL",
+    "coord": {
+      "lon": 23.24852,
+      "lat": 50.721401
+    }
+  },
+  {
+    "id": 7533365,
+    "name": "Wołomin",
+    "country": "PL",
+    "coord": {
+      "lon": 21.2362,
+      "lat": 52.342602
+    }
+  },
+  {
+    "id": 7530871,
+    "name": "Powiat świdnicki",
+    "country": "PL",
+    "coord": {
+      "lon": 22.85397,
+      "lat": 51.124699
+    }
+  },
+  {
+    "id": 7531487,
+    "name": "Świdnik",
+    "country": "PL",
+    "coord": {
+      "lon": 22.68494,
+      "lat": 51.216709
+    }
+  },
+  {
+    "id": 7532739,
+    "name": "Skarżysko-Kamienna",
+    "country": "PL",
+    "coord": {
+      "lon": 20.8752,
+      "lat": 51.122898
+    }
+  },
+  {
+    "id": 7532294,
+    "name": "Siemiatycze",
+    "country": "PL",
+    "coord": {
+      "lon": 22.875099,
+      "lat": 52.420502
+    }
+  },
+  {
+    "id": 7530940,
+    "name": "Siedlce",
+    "country": "PL",
+    "coord": {
+      "lon": 22.275749,
+      "lat": 52.161751
+    }
+  },
+  {
+    "id": 7531704,
+    "name": "Pruszków",
+    "country": "PL",
+    "coord": {
+      "lon": 20.798599,
+      "lat": 52.172001
+    }
+  },
+  {
+    "id": 7532584,
+    "name": "Otwock",
+    "country": "PL",
+    "coord": {
+      "lon": 21.289301,
+      "lat": 52.116001
+    }
+  },
+  {
+    "id": 7533381,
+    "name": "Olecko",
+    "country": "PL",
+    "coord": {
+      "lon": 22.4981,
+      "lat": 54.036098
+    }
+  },
+  {
+    "id": 7533317,
+    "name": "Nisko",
+    "country": "PL",
+    "coord": {
+      "lon": 22.129,
+      "lat": 50.503201
+    }
+  },
+  {
+    "id": 7531822,
+    "name": "Milanówek",
+    "country": "PL",
+    "coord": {
+      "lon": 20.6703,
+      "lat": 52.124802
+    }
+  },
+  {
+    "id": 7531123,
+    "name": "Lubartów",
+    "country": "PL",
+    "coord": {
+      "lon": 22.605869,
+      "lat": 51.458408
+    }
+  },
+  {
+    "id": 7530773,
+    "name": "Łomża",
+    "country": "PL",
+    "coord": {
+      "lon": 22.05888,
+      "lat": 53.182671
+    }
+  },
+  {
+    "id": 7531442,
+    "name": "Łomża",
+    "country": "PL",
+    "coord": {
+      "lon": 22.05888,
+      "lat": 53.182671
+    }
+  },
+  {
+    "id": 7531029,
+    "name": "Powiat warszawski zachodni",
+    "country": "PL",
+    "coord": {
+      "lon": 20.619129,
+      "lat": 52.268379
+    }
+  },
+  {
+    "id": 7531926,
+    "name": "Warszawa",
+    "country": "PL",
+    "coord": {
+      "lon": 21.061399,
+      "lat": 52.233101
+    }
+  },
+  {
+    "id": 7533507,
+    "name": "Grodzisk Mazowiecki",
+    "country": "PL",
+    "coord": {
+      "lon": 20.6332,
+      "lat": 52.105202
+    }
+  },
+  {
+    "id": 7531646,
+    "name": "Ełk",
+    "country": "PL",
+    "coord": {
+      "lon": 22.3598,
+      "lat": 53.823898
+    }
+  },
+  {
+    "id": 7532275,
+    "name": "Dęblin",
+    "country": "PL",
+    "coord": {
+      "lon": 21.8743,
+      "lat": 51.567299
+    }
+  },
+  {
+    "id": 7532583,
+    "name": "Biłgoraj",
+    "country": "PL",
+    "coord": {
+      "lon": 22.711599,
+      "lat": 50.539001
+    }
+  },
+  {
+    "id": 7532895,
+    "name": "Żywiec",
+    "country": "PL",
+    "coord": {
+      "lon": 19.2097,
+      "lat": 49.706299
+    }
+  },
+  {
+    "id": 7532319,
+    "name": "Złotów",
+    "country": "PL",
+    "coord": {
+      "lon": 17.066299,
+      "lat": 53.374001
+    }
+  },
+  {
+    "id": 3080071,
+    "name": "Zlotow",
+    "country": "PL",
+    "coord": {
+      "lon": 17.040819,
+      "lat": 53.363461
+    }
+  },
+  {
+    "id": 7532956,
+    "name": "Włocławek",
+    "country": "PL",
+    "coord": {
+      "lon": 19.060801,
+      "lat": 52.665298
+    }
+  },
+  {
+    "id": 7532411,
+    "name": "Wągrowiec",
+    "country": "PL",
+    "coord": {
+      "lon": 17.1978,
+      "lat": 52.812199
+    }
+  },
+  {
+    "id": 7531004,
+    "name": "Powiat turecki",
+    "country": "PL",
+    "coord": {
+      "lon": 18.49301,
+      "lat": 51.995811
+    }
+  },
+  {
+    "id": 7530992,
+    "name": "Świętochłowice",
+    "country": "PL",
+    "coord": {
+      "lon": 18.910219,
+      "lat": 50.297958
+    }
+  },
+  {
+    "id": 7533428,
+    "name": "Świebodzin",
+    "country": "PL",
+    "coord": {
+      "lon": 15.5311,
+      "lat": 52.244202
+    }
+  },
+  {
+    "id": 3084062,
+    "name": "Swiebodzin",
+    "country": "PL",
+    "coord": {
+      "lon": 15.53355,
+      "lat": 52.247509
+    }
+  },
+  {
+    "id": 7531011,
+    "name": "Powiat świdwiński",
+    "country": "PL",
+    "coord": {
+      "lon": 15.89859,
+      "lat": 53.807579
+    }
+  },
+  {
+    "id": 7533378,
+    "name": "Śrem",
+    "country": "PL",
+    "coord": {
+      "lon": 17.0187,
+      "lat": 52.0867
+    }
+  },
+  {
+    "id": 7533539,
+    "name": "Skawina",
+    "country": "PL",
+    "coord": {
+      "lon": 19.825001,
+      "lat": 49.973301
+    }
+  },
+  {
+    "id": 7530915,
+    "name": "Powiat rypiński",
+    "country": "PL",
+    "coord": {
+      "lon": 19.40975,
+      "lat": 53.066132
+    }
+  },
+  {
+    "id": 7530951,
+    "name": "Ruda Śląska",
+    "country": "PL",
+    "coord": {
+      "lon": 18.874241,
+      "lat": 50.270061
+    }
+  },
+  {
+    "id": 7531598,
+    "name": "Reda",
+    "country": "PL",
+    "coord": {
+      "lon": 18.348881,
+      "lat": 54.608559
+    }
+  },
+  {
+    "id": 7530844,
+    "name": "Powiat policki",
+    "country": "PL",
+    "coord": {
+      "lon": 14.45104,
+      "lat": 53.531139
+    }
+  },
+  {
+    "id": 7533330,
+    "name": "Police",
+    "country": "PL",
+    "coord": {
+      "lon": 14.5792,
+      "lat": 53.567699
+    }
+  },
+  {
+    "id": 7531521,
+    "name": "Oświęcim",
+    "country": "PL",
+    "coord": {
+      "lon": 19.256121,
+      "lat": 50.033649
+    }
+  },
+  {
+    "id": 3090433,
+    "name": "Nysa Zamlynie",
+    "country": "PL",
+    "coord": {
+      "lon": 17.31308,
+      "lat": 50.4575
+    }
+  },
+  {
+    "id": 7531586,
+    "name": "Mysłowice",
+    "country": "PL",
+    "coord": {
+      "lon": 19.153879,
+      "lat": 50.209621
+    }
+  },
+  {
+    "id": 7531571,
+    "name": "Mikołów",
+    "country": "PL",
+    "coord": {
+      "lon": 18.861891,
+      "lat": 50.196091
+    }
+  },
+  {
+    "id": 7533483,
+    "name": "Międzyrzecz",
+    "country": "PL",
+    "coord": {
+      "lon": 15.5914,
+      "lat": 52.448299
+    }
+  },
+  {
+    "id": 7531264,
+    "name": "Malbork",
+    "country": "PL",
+    "coord": {
+      "lon": 19.04435,
+      "lat": 54.028461
+    }
+  },
+  {
+    "id": 7532231,
+    "name": "Łęczyca",
+    "country": "PL",
+    "coord": {
+      "lon": 19.198999,
+      "lat": 52.054298
+    }
+  },
+  {
+    "id": 7533311,
+    "name": "Krapkowice",
+    "country": "PL",
+    "coord": {
+      "lon": 17.957399,
+      "lat": 50.478401
+    }
+  },
+  {
+    "id": 7530983,
+    "name": "Koszalin",
+    "country": "PL",
+    "coord": {
+      "lon": 16.21661,
+      "lat": 54.207191
+    }
+  },
+  {
+    "id": 7531076,
+    "name": "Powiat kościański",
+    "country": "PL",
+    "coord": {
+      "lon": 16.715139,
+      "lat": 52.066158
+    }
+  },
+  {
+    "id": 7531410,
+    "name": "Koło",
+    "country": "PL",
+    "coord": {
+      "lon": 18.63546,
+      "lat": 52.19838
+    }
+  },
+  {
+    "id": 7530761,
+    "name": "Powiat kluczborski",
+    "country": "PL",
+    "coord": {
+      "lon": 18.15258,
+      "lat": 50.98576
+    }
+  },
+  {
+    "id": 7530863,
+    "name": "Kalisz",
+    "country": "PL",
+    "coord": {
+      "lon": 18.076059,
+      "lat": 51.74725
+    }
+  },
+  {
+    "id": 7531679,
+    "name": "Kalisz",
+    "country": "PL",
+    "coord": {
+      "lon": 18.076,
+      "lat": 51.7472
+    }
+  },
+  {
+    "id": 3096880,
+    "name": "Kalisz",
+    "country": "PL",
+    "coord": {
+      "lon": 18.091021,
+      "lat": 51.761089
+    }
+  },
+  {
+    "id": 7531075,
+    "name": "Powiat jarociński",
+    "country": "PL",
+    "coord": {
+      "lon": 17.454969,
+      "lat": 52.00901
+    }
+  },
+  {
+    "id": 7532114,
+    "name": "Gubin",
+    "country": "PL",
+    "coord": {
+      "lon": 14.749,
+      "lat": 51.957199
+    }
+  },
+  {
+    "id": 7530928,
+    "name": "Powiat gostyniński",
+    "country": "PL",
+    "coord": {
+      "lon": 19.62187,
+      "lat": 52.389881
+    }
+  },
+  {
+    "id": 7532986,
+    "name": "Głuchołazy",
+    "country": "PL",
+    "coord": {
+      "lon": 17.368401,
+      "lat": 50.313702
+    }
+  },
+  {
+    "id": 7532274,
+    "name": "Głowno",
+    "country": "PL",
+    "coord": {
+      "lon": 19.714001,
+      "lat": 51.962002
+    }
+  },
+  {
+    "id": 7533185,
+    "name": "Czerwionka-Leszczyny",
+    "country": "PL",
+    "coord": {
+      "lon": 18.678471,
+      "lat": 50.150341
+    }
+  },
+  {
+    "id": 7531638,
+    "name": "Chodzież",
+    "country": "PL",
+    "coord": {
+      "lon": 16.915701,
+      "lat": 52.9949
+    }
+  },
+  {
+    "id": 7530986,
+    "name": "Bytom",
+    "country": "PL",
+    "coord": {
+      "lon": 18.876301,
+      "lat": 50.365211
+    }
+  },
+  {
+    "id": 7532536,
+    "name": "Bytom",
+    "country": "PL",
+    "coord": {
+      "lon": 18.876301,
+      "lat": 50.3652
+    }
+  },
+  {
+    "id": 7532249,
+    "name": "Brzeg",
+    "country": "PL",
+    "coord": {
+      "lon": 17.462799,
+      "lat": 50.858898
+    }
+  },
+  {
+    "id": 3102459,
+    "name": "Brzeg",
+    "country": "PL",
+    "coord": {
+      "lon": 17.4674,
+      "lat": 50.86079
+    }
+  },
+  {
+    "id": 7533560,
+    "name": "Aleksandrów Łódzki",
+    "country": "PL",
+    "coord": {
+      "lon": 19.303801,
+      "lat": 51.816002
+    }
+  },
+  {
+    "id": 7532997,
+    "name": "Jelcz-Laskowice",
+    "country": "PL",
+    "coord": {
+      "lon": 17.33,
+      "lat": 51.0327
+    }
+  },
+  {
+    "id": 7303641,
+    "name": "Jelcz Laskowice",
+    "country": "PL",
+    "coord": {
+      "lon": 17.31649,
+      "lat": 51.021339
+    }
+  },
+  {
+    "id": 4030723,
+    "name": "Adamstown",
+    "country": "PN",
+    "coord": {
+      "lon": -130.101471,
+      "lat": -25.065969
+    }
+  },
+  {
+    "id": 4562635,
+    "name": "Arecibo",
+    "country": "PR",
+    "coord": {
+      "lon": -66.715729,
+      "lat": 18.472441
+    }
+  },
+  {
+    "id": 4562768,
+    "name": "Barceloneta",
+    "country": "PR",
+    "coord": {
+      "lon": -66.538513,
+      "lat": 18.4505
+    }
+  },
+  {
+    "id": 4568138,
+    "name": "San Juan",
+    "country": "PR",
+    "coord": {
+      "lon": -66.09169,
+      "lat": 18.450951
+    }
+  },
+  {
+    "id": 4568533,
+    "name": "Vega Baja",
+    "country": "PR",
+    "coord": {
+      "lon": -66.387672,
+      "lat": 18.444389
+    }
+  },
+  {
+    "id": 281141,
+    "name": "Dayr al Balah",
+    "country": "PS",
+    "coord": {
+      "lon": 34.345249,
+      "lat": 31.41655
+    }
+  },
+  {
+    "id": 281581,
+    "name": "Tubas",
+    "country": "PS",
+    "coord": {
+      "lon": 35.369888,
+      "lat": 32.320911
+    }
+  },
+  {
+    "id": 282476,
+    "name": "Qabatiyah",
+    "country": "PS",
+    "coord": {
+      "lon": 35.288231,
+      "lat": 32.412552
+    }
+  },
+  {
+    "id": 283621,
+    "name": "Idhna",
+    "country": "PS",
+    "coord": {
+      "lon": 34.974361,
+      "lat": 31.558741
+    }
+  },
+  {
+    "id": 284324,
+    "name": "Bayt Jala",
+    "country": "PS",
+    "coord": {
+      "lon": 35.187881,
+      "lat": 31.71545
+    }
+  },
+  {
+    "id": 284999,
+    "name": "Al Yamun",
+    "country": "PS",
+    "coord": {
+      "lon": 35.2267,
+      "lat": 32.4846
+    }
+  },
+  {
+    "id": 6967990,
+    "name": "Az Zuwaydah",
+    "country": "PS",
+    "coord": {
+      "lon": 34.380531,
+      "lat": 31.439541
+    }
+  },
+  {
+    "id": 8010624,
+    "name": "Sesimbra",
+    "country": "PT",
+    "coord": {
+      "lon": -9.1024,
+      "lat": 38.44075
+    }
+  },
+  {
+    "id": 8012023,
+    "name": "Portimão",
+    "country": "PT",
+    "coord": {
+      "lon": -8.53528,
+      "lat": 37.180038
+    }
+  },
+  {
+    "id": 2264456,
+    "name": "Portimao",
+    "country": "PT",
+    "coord": {
+      "lon": -8.53775,
+      "lat": 37.138561
+    }
+  },
+  {
+    "id": 8014496,
+    "name": "Paço de Arcos",
+    "country": "PT",
+    "coord": {
+      "lon": -9.29268,
+      "lat": 38.701469
+    }
+  },
+  {
+    "id": 8012018,
+    "name": "Olhão",
+    "country": "PT",
+    "coord": {
+      "lon": -7.83082,
+      "lat": 37.016788
+    }
+  },
+  {
+    "id": 2265447,
+    "name": "Olhao",
+    "country": "PT",
+    "coord": {
+      "lon": -7.8411,
+      "lat": 37.028599
+    }
+  },
+  {
+    "id": 8012457,
+    "name": "Cascais",
+    "country": "PT",
+    "coord": {
+      "lon": -9.47189,
+      "lat": 38.725269
+    }
+  },
+  {
+    "id": 8012977,
+    "name": "Monsanto",
+    "country": "PT",
+    "coord": {
+      "lon": -8.70061,
+      "lat": 39.4739
+    }
+  },
+  {
+    "id": 2266249,
+    "name": "Monsanto",
+    "country": "PT",
+    "coord": {
+      "lon": -8.7118,
+      "lat": 39.462029
+    }
+  },
+  {
+    "id": 8012009,
+    "name": "Loulé (São Clemente)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.0014,
+      "lat": 37.137131
+    }
+  },
+  {
+    "id": 2267131,
+    "name": "Laranjeiro",
+    "country": "PT",
+    "coord": {
+      "lon": -7.7937,
+      "lat": 37.06831
+    }
+  },
+  {
+    "id": 8012001,
+    "name": "Lagos (São Sebastião)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.68121,
+      "lat": 37.125961
+    }
+  },
+  {
+    "id": 8012458,
+    "name": "Estoril",
+    "country": "PT",
+    "coord": {
+      "lon": -9.38979,
+      "lat": 38.709709
+    }
+  },
+  {
+    "id": 8010603,
+    "name": "Entroncamento",
+    "country": "PT",
+    "coord": {
+      "lon": -8.47624,
+      "lat": 39.466549
+    }
+  },
+  {
+    "id": 8013005,
+    "name": "São João Baptista",
+    "country": "PT",
+    "coord": {
+      "lon": -8.47423,
+      "lat": 39.46513
+    }
+  },
+  {
+    "id": 2268575,
+    "name": "Entroncamento",
+    "country": "PT",
+    "coord": {
+      "lon": -8.46667,
+      "lat": 39.466671
+    }
+  },
+  {
+    "id": 8012539,
+    "name": "Carnaxide",
+    "country": "PT",
+    "coord": {
+      "lon": -9.23721,
+      "lat": 38.72736
+    }
+  },
+  {
+    "id": 2270981,
+    "name": "Belas",
+    "country": "PT",
+    "coord": {
+      "lon": -9.26078,
+      "lat": 38.77721
+    }
+  },
+  {
+    "id": 2732475,
+    "name": "Vilar de Andorinho",
+    "country": "PT",
+    "coord": {
+      "lon": -8.59632,
+      "lat": 41.10751
+    }
+  },
+  {
+    "id": 2732773,
+    "name": "Viana do Castelo",
+    "country": "PT",
+    "coord": {
+      "lon": -8.83287,
+      "lat": 41.69323
+    }
+  },
+  {
+    "id": 8014652,
+    "name": "São Miguel da Guarda",
+    "country": "PT",
+    "coord": {
+      "lon": -7.24223,
+      "lat": 40.55407
+    }
+  },
+  {
+    "id": 2734106,
+    "name": "Sequeira",
+    "country": "PT",
+    "coord": {
+      "lon": -7.22594,
+      "lat": 40.553638
+    }
+  },
+  {
+    "id": 2734363,
+    "name": "Sao Pedro da Cova",
+    "country": "PT",
+    "coord": {
+      "lon": -8.50412,
+      "lat": 41.155079
+    }
+  },
+  {
+    "id": 8014137,
+    "name": "Póvoa de Varzim",
+    "country": "PT",
+    "coord": {
+      "lon": -8.75776,
+      "lat": 41.382149
+    }
+  },
+  {
+    "id": 8012861,
+    "name": "Santo Ildefonso",
+    "country": "PT",
+    "coord": {
+      "lon": -8.60703,
+      "lat": 41.153671
+    }
+  },
+  {
+    "id": 8014656,
+    "name": "Ponte de Lima",
+    "country": "PT",
+    "coord": {
+      "lon": -8.58764,
+      "lat": 41.765282
+    }
+  },
+  {
+    "id": 2736041,
+    "name": "Ponte do Lima",
+    "country": "PT",
+    "coord": {
+      "lon": -8.58393,
+      "lat": 41.767189
+    }
+  },
+  {
+    "id": 2736521,
+    "name": "Pedroso",
+    "country": "PT",
+    "coord": {
+      "lon": -8.74897,
+      "lat": 41.41103
+    }
+  },
+  {
+    "id": 2737039,
+    "name": "Oliveira do Douro",
+    "country": "PT",
+    "coord": {
+      "lon": -8.58463,
+      "lat": 41.12466
+    }
+  },
+  {
+    "id": 8013257,
+    "name": "Monção",
+    "country": "PT",
+    "coord": {
+      "lon": -8.48268,
+      "lat": 42.070351
+    }
+  },
+  {
+    "id": 8010801,
+    "name": "Ílhavo (São Salvador)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.67622,
+      "lat": 40.596722
+    }
+  },
+  {
+    "id": 8011224,
+    "name": "Guimarães (São Paio)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.29966,
+      "lat": 41.44466
+    }
+  },
+  {
+    "id": 2739723,
+    "name": "Feira",
+    "country": "PT",
+    "coord": {
+      "lon": -8.54277,
+      "lat": 40.92535
+    }
+  },
+  {
+    "id": 8011125,
+    "name": "Esposende",
+    "country": "PT",
+    "coord": {
+      "lon": -8.77917,
+      "lat": 41.53323
+    }
+  },
+  {
+    "id": 8011451,
+    "name": "Bragança (Sé)",
+    "country": "PT",
+    "coord": {
+      "lon": -6.76742,
+      "lat": 41.812019
+    }
+  },
+  {
+    "id": 8014156,
+    "name": "Braga (São José de São Lázaro)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.41785,
+      "lat": 41.544159
+    }
+  },
+  {
+    "id": 8012950,
+    "name": "Bougado (São Martinho)",
+    "country": "PT",
+    "coord": {
+      "lon": -8.53708,
+      "lat": 41.330601
+    }
+  },
+  {
+    "id": 8010958,
+    "name": "Arcozelo",
+    "country": "PT",
+    "coord": {
+      "lon": -8.60892,
+      "lat": 41.545101
+    }
+  },
+  {
+    "id": 3372783,
+    "name": "Ponta Delgada",
+    "country": "PT",
+    "coord": {
+      "lon": -25.66667,
+      "lat": 37.73333
+    }
+  },
+  {
+    "id": 6690294,
+    "name": "Saint-Benoît",
+    "country": "RE",
+    "coord": {
+      "lon": 55.716671,
+      "lat": -21.033331
+    }
+  },
+  {
+    "id": 673816,
+    "name": "Margita",
+    "country": "RO",
+    "coord": {
+      "lon": 22.33333,
+      "lat": 47.349998
+    }
+  },
+  {
+    "id": 685785,
+    "name": "Bailesti",
+    "country": "RO",
+    "coord": {
+      "lon": 23.35,
+      "lat": 44.01667
+    }
+  },
+  {
+    "id": 673887,
+    "name": "Judeţul Maramureş",
+    "country": "RO",
+    "coord": {
+      "lon": 24,
+      "lat": 47.666672
+    }
+  },
+  {
+    "id": 3204390,
+    "name": "Opština Bečej",
+    "country": "RS",
+    "coord": {
+      "lon": 19.995279,
+      "lat": 45.609718
+    }
+  },
+  {
+    "id": 792814,
+    "name": "Becej",
+    "country": "RS",
+    "coord": {
+      "lon": 20.03331,
+      "lat": 45.616322
+    }
+  },
+  {
+    "id": 486110,
+    "name": "Surkhakhi",
+    "country": "RU",
+    "coord": {
+      "lon": 44.901939,
+      "lat": 43.1875
+    }
+  },
+  {
+    "id": 486665,
+    "name": "Sukhinichi",
+    "country": "RU",
+    "coord": {
+      "lon": 35.342541,
+      "lat": 54.099892
+    }
+  },
+  {
+    "id": 515246,
+    "name": "Onega",
+    "country": "RU",
+    "coord": {
+      "lon": 38.14035,
+      "lat": 63.906071
+    }
+  },
+  {
+    "id": 515879,
+    "name": "Oktyabrskiy",
+    "country": "RU",
+    "coord": {
+      "lon": 53.471031,
+      "lat": 54.481468
+    }
+  },
+  {
+    "id": 544293,
+    "name": "Kosaya Gora",
+    "country": "RU",
+    "coord": {
+      "lon": 37.54459,
+      "lat": 54.118961
+    }
+  },
+  {
+    "id": 581671,
+    "name": "Anna",
+    "country": "RU",
+    "coord": {
+      "lon": 40.429901,
+      "lat": 51.4842
+    }
+  },
+  {
+    "id": 583437,
+    "name": "Alatyr",
+    "country": "RU",
+    "coord": {
+      "lon": 46.581299,
+      "lat": 54.842098
+    }
+  },
+  {
+    "id": 824987,
+    "name": "Gorod Belgorod",
+    "country": "RU",
+    "coord": {
+      "lon": 36.583328,
+      "lat": 50.583328
+    }
+  },
+  {
+    "id": 828055,
+    "name": "Belidzhi",
+    "country": "RU",
+    "coord": {
+      "lon": 48.412472,
+      "lat": 41.891842
+    }
+  },
+  {
+    "id": 831165,
+    "name": "Zarechnyy",
+    "country": "RU",
+    "coord": {
+      "lon": 46.583328,
+      "lat": 53.133331
+    }
+  },
+  {
+    "id": 1486340,
+    "name": "Yarovoye",
+    "country": "RU",
+    "coord": {
+      "lon": 78.580002,
+      "lat": 52.927299
+    }
+  },
+  {
+    "id": 498064,
+    "name": "Sazhi",
+    "country": "RU",
+    "coord": {
+      "lon": 59.933331,
+      "lat": 56.866669
+    }
+  },
+  {
+    "id": 1539209,
+    "name": "Gubkinskiy",
+    "country": "RU",
+    "coord": {
+      "lon": 76.502609,
+      "lat": 64.433998
+    }
+  },
+  {
+    "id": 2019326,
+    "name": "Nerchinsk",
+    "country": "RU",
+    "coord": {
+      "lon": 116.583328,
+      "lat": 51.98333
+    }
+  },
+  {
+    "id": 6853140,
+    "name": "Lesnoy",
+    "country": "RU",
+    "coord": {
+      "lon": 63.0784,
+      "lat": 57.619801
+    }
+  },
+  {
+    "id": 7287775,
+    "name": "Nizhnesortymskiy",
+    "country": "RU",
+    "coord": {
+      "lon": 71.760292,
+      "lat": 62.439651
+    }
+  },
+  {
+    "id": 201865,
+    "name": "Nzega",
+    "country": "RW",
+    "coord": {
+      "lon": 29.5564,
+      "lat": -2.479
+    }
+  },
+  {
+    "id": 100926,
+    "name": "Umm Lajj",
+    "country": "SA",
+    "coord": {
+      "lon": 37.268501,
+      "lat": 25.021259
+    }
+  },
+  {
+    "id": 101322,
+    "name": "Turabah",
+    "country": "SA",
+    "coord": {
+      "lon": 41.633099,
+      "lat": 21.21406
+    }
+  },
+  {
+    "id": 102651,
+    "name": "Sabya",
+    "country": "SA",
+    "coord": {
+      "lon": 42.62537,
+      "lat": 17.1495
+    }
+  },
+  {
+    "id": 107781,
+    "name": "Az Zulfi",
+    "country": "SA",
+    "coord": {
+      "lon": 44.815418,
+      "lat": 26.29945
+    }
+  },
+  {
+    "id": 363533,
+    "name": "Zalingei",
+    "country": "SD",
+    "coord": {
+      "lon": 23.47406,
+      "lat": 12.9096
+    }
+  },
+  {
+    "id": 366323,
+    "name": "Tokar",
+    "country": "SD",
+    "coord": {
+      "lon": 37.729,
+      "lat": 18.4254
+    }
+  },
+  {
+    "id": 366426,
+    "name": "Tandalti",
+    "country": "SD",
+    "coord": {
+      "lon": 31.866671,
+      "lat": 13.01667
+    }
+  },
+  {
+    "id": 366847,
+    "name": "Sinja",
+    "country": "SD",
+    "coord": {
+      "lon": 33.933331,
+      "lat": 13.15
+    }
+  },
+  {
+    "id": 370838,
+    "name": "Maiurno",
+    "country": "SD",
+    "coord": {
+      "lon": 33.666672,
+      "lat": 13.41667
+    }
+  },
+  {
+    "id": 371870,
+    "name": "Kuraymah",
+    "country": "SD",
+    "coord": {
+      "lon": 31.85,
+      "lat": 18.549999
+    }
+  },
+  {
+    "id": 379303,
+    "name": "El Geneina",
+    "country": "SD",
+    "coord": {
+      "lon": 22.450001,
+      "lat": 13.45
+    }
+  },
+  {
+    "id": 379406,
+    "name": "Al Hilaliyya",
+    "country": "SD",
+    "coord": {
+      "lon": 33.234001,
+      "lat": 14.9398
+    }
+  },
+  {
+    "id": 2664855,
+    "name": "Varnamo",
+    "country": "SE",
+    "coord": {
+      "lon": 14.04001,
+      "lat": 57.186039
+    }
+  },
+  {
+    "id": 2720114,
+    "name": "Botkyrka Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 17.816669,
+      "lat": 59.200001
+    }
+  },
+  {
+    "id": 2675396,
+    "name": "Solna Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 18.00728,
+      "lat": 59.365479
+    }
+  },
+  {
+    "id": 2698738,
+    "name": "Kungälvs Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 11.91667,
+      "lat": 57.900002
+    }
+  },
+  {
+    "id": 2699780,
+    "name": "Köpings Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 16,
+      "lat": 59.583328
+    }
+  },
+  {
+    "id": 2701712,
+    "name": "Karlskrona Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 15.66667,
+      "lat": 56.25
+    }
+  },
+  {
+    "id": 2703292,
+    "name": "Järfälla Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 17.865141,
+      "lat": 59.408749
+    }
+  },
+  {
+    "id": 2703396,
+    "name": "Jakobsberg",
+    "country": "SE",
+    "coord": {
+      "lon": 17.835079,
+      "lat": 59.42268
+    }
+  },
+  {
+    "id": 2704619,
+    "name": "Huddinge Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 18,
+      "lat": 59.216671
+    }
+  },
+  {
+    "id": 2707396,
+    "name": "Hässleholms Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 13.73333,
+      "lat": 56.216671
+    }
+  },
+  {
+    "id": 2715566,
+    "name": "Falköpings Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 13.51667,
+      "lat": 58.200001
+    }
+  },
+  {
+    "id": 2715945,
+    "name": "Eslövs Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 13.31667,
+      "lat": 55.849998
+    }
+  },
+  {
+    "id": 2725194,
+    "name": "Årstaskog",
+    "country": "SE",
+    "coord": {
+      "lon": 18.043329,
+      "lat": 59.30262
+    }
+  },
+  {
+    "id": 2685981,
+    "name": "Österåkers Kommun",
+    "country": "SE",
+    "coord": {
+      "lon": 18.299789,
+      "lat": 59.483452
+    }
+  },
+  {
+    "id": 2715329,
+    "name": "Färjenäs",
+    "country": "SE",
+    "coord": {
+      "lon": 11.90639,
+      "lat": 57.697498
+    }
+  },
+  {
+    "id": 6930057,
+    "name": "Saint Helena",
+    "country": "SH",
+    "coord": {
+      "lon": -5.71817,
+      "lat": -15.93183
+    }
+  },
+  {
+    "id": 3056523,
+    "name": "Ziar nad Hronom",
+    "country": "SK",
+    "coord": {
+      "lon": 18.849581,
+      "lat": 48.591839
+    }
+  },
+  {
+    "id": 2403094,
+    "name": "Waterloo",
+    "country": "SL",
+    "coord": {
+      "lon": -13.07194,
+      "lat": 8.33833
+    }
+  },
+  {
+    "id": 2404433,
+    "name": "Port Loko",
+    "country": "SL",
+    "coord": {
+      "lon": -12.78333,
+      "lat": 8.76667
+    }
+  },
+  {
+    "id": 2406407,
+    "name": "Makeni",
+    "country": "SL",
+    "coord": {
+      "lon": -12.05,
+      "lat": 8.88333
+    }
+  },
+  {
+    "id": 2406916,
+    "name": "Lunsar",
+    "country": "SL",
+    "coord": {
+      "lon": -12.53333,
+      "lat": 8.68333
+    }
+  },
+  {
+    "id": 2409543,
+    "name": "Eastern Province",
+    "country": "SL",
+    "coord": {
+      "lon": -11,
+      "lat": 8.25
+    }
+  },
+  {
+    "id": 2407790,
+    "name": "Kenema",
+    "country": "SL",
+    "coord": {
+      "lon": -11.1875,
+      "lat": 7.87667
+    }
+  },
+  {
+    "id": 3345302,
+    "name": "Castello di San Marino Città",
+    "country": "SM",
+    "coord": {
+      "lon": 12.45,
+      "lat": 43.933331
+    }
+  },
+  {
+    "id": 2244799,
+    "name": "Thies Nones",
+    "country": "SN",
+    "coord": {
+      "lon": -16.966669,
+      "lat": 14.78333
+    }
+  },
+  {
+    "id": 2244991,
+    "name": "Tambacounda",
+    "country": "SN",
+    "coord": {
+      "lon": -13.75861,
+      "lat": 13.75389
+    }
+  },
+  {
+    "id": 2246452,
+    "name": "Saint-Louis",
+    "country": "SN",
+    "coord": {
+      "lon": -16.48962,
+      "lat": 16.017929
+    }
+  },
+  {
+    "id": 2246544,
+    "name": "Richard-Toll",
+    "country": "SN",
+    "coord": {
+      "lon": -15.70083,
+      "lat": 16.4625
+    }
+  },
+  {
+    "id": 2246606,
+    "name": "Pout",
+    "country": "SN",
+    "coord": {
+      "lon": -17.06028,
+      "lat": 14.77389
+    }
+  },
+  {
+    "id": 2247381,
+    "name": "Nguekokh",
+    "country": "SN",
+    "coord": {
+      "lon": -17.004999,
+      "lat": 14.51278
+    }
+  },
+  {
+    "id": 2247813,
+    "name": "Ndibene Dahra",
+    "country": "SN",
+    "coord": {
+      "lon": -15.4766,
+      "lat": 15.3338
+    }
+  },
+  {
+    "id": 2250645,
+    "name": "Kedougou",
+    "country": "SN",
+    "coord": {
+      "lon": -12.1743,
+      "lat": 12.5579
+    }
+  },
+  {
+    "id": 2250677,
+    "name": "Kayar",
+    "country": "SN",
+    "coord": {
+      "lon": -17.121111,
+      "lat": 14.91917
+    }
+  },
+  {
+    "id": 2253277,
+    "name": "Dara",
+    "country": "SN",
+    "coord": {
+      "lon": -15.47993,
+      "lat": 15.34844
+    }
+  },
+  {
+    "id": 51966,
+    "name": "Gobolka Shabeellaha Hoose",
+    "country": "SO",
+    "coord": {
+      "lon": 44.416672,
+      "lat": 1.83333
+    }
+  },
+  {
+    "id": 50672,
+    "name": "Wanlaweyn",
+    "country": "SO",
+    "coord": {
+      "lon": 44.893799,
+      "lat": 2.6185
+    }
+  },
+  {
+    "id": 52867,
+    "name": "Qoryooley",
+    "country": "SO",
+    "coord": {
+      "lon": 44.529991,
+      "lat": 1.78784
+    }
+  },
+  {
+    "id": 53157,
+    "name": "Qandala",
+    "country": "SO",
+    "coord": {
+      "lon": 49.872822,
+      "lat": 11.47197
+    }
+  },
+  {
+    "id": 56166,
+    "name": "Jilib",
+    "country": "SO",
+    "coord": {
+      "lon": 42.785351,
+      "lat": 0.48829
+    }
+  },
+  {
+    "id": 57289,
+    "name": "Hargeysa",
+    "country": "SO",
+    "coord": {
+      "lon": 44.064999,
+      "lat": 9.56
+    }
+  },
+  {
+    "id": 62788,
+    "name": "Ceeldheer",
+    "country": "SO",
+    "coord": {
+      "lon": 47.180641,
+      "lat": 3.84878
+    }
+  },
+  {
+    "id": 64538,
+    "name": "Gobolka Bay",
+    "country": "SO",
+    "coord": {
+      "lon": 43.5,
+      "lat": 3
+    }
+  },
+  {
+    "id": 63689,
+    "name": "Buulobarde",
+    "country": "SO",
+    "coord": {
+      "lon": 45.56744,
+      "lat": 3.85375
+    }
+  },
+  {
+    "id": 65170,
+    "name": "Baardheere",
+    "country": "SO",
+    "coord": {
+      "lon": 42.27644,
+      "lat": 2.34464
+    }
+  },
+  {
+    "id": 363619,
+    "name": "Yei",
+    "country": "SS",
+    "coord": {
+      "lon": 30.677919,
+      "lat": 4.09504
+    }
+  },
+  {
+    "id": 364367,
+    "name": "Aweil",
+    "country": "SS",
+    "coord": {
+      "lon": 27.40019,
+      "lat": 8.76816
+    }
+  },
+  {
+    "id": 408670,
+    "name": "Warrap State",
+    "country": "SS",
+    "coord": {
+      "lon": 28.85,
+      "lat": 8
+    }
+  },
+  {
+    "id": 365763,
+    "name": "Tonj",
+    "country": "SS",
+    "coord": {
+      "lon": 28.68223,
+      "lat": 7.27369
+    }
+  },
+  {
+    "id": 375495,
+    "name": "Pajok",
+    "country": "SS",
+    "coord": {
+      "lon": 32.482121,
+      "lat": 3.86512
+    }
+  },
+  {
+    "id": 377241,
+    "name": "Bor",
+    "country": "SS",
+    "coord": {
+      "lon": 31.55633,
+      "lat": 6.20593
+    }
+  },
+  {
+    "id": 3583471,
+    "name": "San Martin",
+    "country": "SV",
+    "coord": {
+      "lon": -88.916672,
+      "lat": 13.78333
+    }
+  },
+  {
+    "id": 163811,
+    "name": "Tadif",
+    "country": "SY",
+    "coord": {
+      "lon": 37.530899,
+      "lat": 36.348141
+    }
+  },
+  {
+    "id": 170044,
+    "name": "Halfaya",
+    "country": "SY",
+    "coord": {
+      "lon": 36.605721,
+      "lat": 35.259949
+    }
+  },
+  {
+    "id": 170592,
+    "name": "Douma",
+    "country": "SY",
+    "coord": {
+      "lon": 36.402699,
+      "lat": 33.571751
+    }
+  },
+  {
+    "id": 170785,
+    "name": "Dayr Hafir",
+    "country": "SY",
+    "coord": {
+      "lon": 37.707779,
+      "lat": 36.15694
+    }
+  },
+  {
+    "id": 170794,
+    "name": "Dayr az Zawr",
+    "country": "SY",
+    "coord": {
+      "lon": 40.140839,
+      "lat": 35.33588
+    }
+  }
+]
