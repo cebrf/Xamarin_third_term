@@ -42,10 +42,12 @@ namespace WeatherApp
             ForecastData forecastData = null;
             try
             {
-                var response = await _client.GetAsync(query);
+                var response = await _client.GetAsync(query)
+                        .ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
-                    var content = await response.Content.ReadAsStringAsync();
+                    var content = await response.Content.ReadAsStringAsync()
+                        .ConfigureAwait(false);
                     forecastData = JsonConvert.DeserializeObject<ForecastData>(content);
                 }
             }
