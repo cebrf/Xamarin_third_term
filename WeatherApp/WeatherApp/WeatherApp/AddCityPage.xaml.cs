@@ -43,13 +43,13 @@ namespace WeatherApp
                 return;
 
             foreach (var city in AllCities
-                .Where(obj => obj["name"].Value<string>().Contains(cityInput.Text)))
+                .Where(obj => obj["name"].Value<string>().StartsWith(cityInput.Text)))
             {
                 Label cityLabel = new Label()
                 {
                     Margin = new Thickness(5, 0, 0, 5),
                     LineBreakMode = LineBreakMode.TailTruncation,
-                    Text = city["name"].Value<string>()
+                    Text = city["name"].Value<string>() + ",  " + city["country"].Value<string>()
                 };
                 Frame cityFrame = new Frame()
                 {

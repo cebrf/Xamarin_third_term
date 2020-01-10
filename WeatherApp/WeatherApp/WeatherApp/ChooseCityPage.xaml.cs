@@ -22,6 +22,7 @@ namespace WeatherApp
                 Label cityLabel = new Label()
                 {
                     Margin = new Thickness(5, 0, 0, 5),
+                    TextColor = Color.FloralWhite,
                     LineBreakMode = LineBreakMode.TailTruncation,
                     Text = cityName
                 };
@@ -44,7 +45,6 @@ namespace WeatherApp
 
         private void addCity_Clicked(object sender, EventArgs eArgs)
         {
-            // TODO new page with find of city (need check if exist. Or not save incorrect val. ! You can choose only from list of cities, which contains your letters)
             AddCityPage addPage = new AddCityPage();
             addPage.Disappearing += (s, e) =>
             {

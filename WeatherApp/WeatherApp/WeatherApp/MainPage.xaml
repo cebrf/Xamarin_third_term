@@ -16,20 +16,24 @@
                    TargetType="Label">
                 <Setter Property="FontSize" 
                         Value="Large" />
-                <Setter Property="TextColor" 
-                        Value="Gray" />
                 <Setter Property="TextColor"
                         Value="GhostWhite"/>
+                <Setter Property="HorizontalOptions"
+                        Value="Center"/>
+                <Setter Property="VerticalOptions"
+                        Value="CenterAndExpand"/>
             </Style>
 
             <Style x:Key="labelResultStyle" 
                    TargetType="Label">
                 <Setter Property="FontSize" 
                         Value="Large" />
-                <Setter Property="Margin" 
-                        Value="10,0,0,0" />
                 <Setter Property="TextColor"
                         Value="GhostWhite"/>
+                <Setter Property="HorizontalOptions"
+                        Value="Center"/>
+                <Setter Property="VerticalOptions"
+                        Value="CenterAndExpand"/>
             </Style>
 
             <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
@@ -47,40 +51,36 @@
         <StackLayout>
             <ScrollView>
                 <StackLayout Padding="10">
-                    <Label Text="Location" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Title}" 
-                       Style="{StaticResource labelResultStyle}" />
+                    <Label Text="{Binding Title}"
+                           Style="{StaticResource labelResultStyle}"
+                           Margin="0, 10, 0, 0"
+                           FontSize="30"/>
 
-                    <Label Text="Temperature" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Main.Temperature}" 
-                       Style="{StaticResource labelResultStyle}" />
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 Margin="0, 30, 0, 0">
+                        <Label Text="{Binding Main.Temperature, StringFormat='{0}° C'}"
+                               Style="{StaticResource labelResultStyle}"
+                               FontSize="50"
+                               Margin="0, 0, 0, 0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center">
+                        <Label Text="{Binding Main.TempMin, StringFormat='{0} / '}" 
+                           Style="{StaticResource labelResultStyle}"
+                           Margin="0, 0, 0, 70"/>
+                        <Label Text="{Binding Main.TempMax}" 
+                           Style="{StaticResource labelResultStyle}"
+                           Margin="0, 0, 0, 70"/>
+                    </StackLayout>
 
-                    <Label Text="Wind Speed" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Wind.Speed}" 
-                       Style="{StaticResource labelResultStyle}" />
-
-                    <Label Text="Humidity" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Main.Humidity}" 
-                       Style="{StaticResource labelResultStyle}" />
-
-                    <Label Text="Visibility" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Weather[0].Visibility}" 
-                       Style="{StaticResource labelResultStyle}" />
-
-                    <Label Text="Time of Sunrise" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
-                       Style="{StaticResource labelResultStyle}" />
-
-                    <Label Text="Time of Sunset" 
-                       Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
-                       Style="{StaticResource labelResultStyle}" />
+                    <Image x:Name="backgroundImage"
+                           Source="{Binding Weather[0].Icon, StringFormat='https://openweathermap.org/img/w/{0}.png'}"
+                           HeightRequest="100"
+                           Margin="0, 0, 0, 0"/>
+                    <Label Text="{Binding Weather[0].Description}" 
+                           Style="{StaticResource labelResultStyle}"
+                           Margin="0, 0, 0, 0"/>
                 </StackLayout>
             </ScrollView>
 
@@ -89,6 +89,12 @@
                     <BoxView Color="Bisque"
                              WidthRequest="400"
                              HeightRequest="500"/>
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"
+                                 BackgroundColor="Beige">
+                        <Label Text="Image UriSource Xaml"/>
+                        <Image Source="http://i.pinimg.com/736x/fb/2e/c6/fb2ec6ba69a72386f472b7266eb269c7--personal-logo-visual-identity.jpg" />
+                        <Label Text="example-app.png gets downloaded from xamarin.com" />
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

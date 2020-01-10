@@ -4,11 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="WeatherApp.AddCityPage">
+             x:Class="WeatherApp.AddCityPage"
+             BackgroundColor="SteelBlue">
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="cityInput"
-                   TextChanged="cityInput_TextChanged"/>
+                   TextChanged="cityInput_TextChanged"
+                   BackgroundColor="DarkSlateGray"
+                   TextColor="GhostWhite"/>
             <ScrollView>
                 <StackLayout x:Name="citiesContainer"/>
             </ScrollView>
